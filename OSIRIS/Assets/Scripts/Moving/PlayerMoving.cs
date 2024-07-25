@@ -5,7 +5,9 @@ using UnityEngine;
 public class PlayerMoving : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 7f;
+
     Camera mainCamera;
+    Vector3 movePos;
 
     private void Start()
     {
@@ -14,9 +16,12 @@ public class PlayerMoving : MonoBehaviour
 
     private void Update()
     {
-        Vector3 movePos = new Vector3(moveSpeed * Time.deltaTime, 0);
-
+        movePos = new Vector3(moveSpeed * Time.deltaTime, 0);
         transform.Translate(movePos);
+    }
+
+    private void LateUpdate()
+    {
         mainCamera.transform.Translate(movePos);
     }
 }
