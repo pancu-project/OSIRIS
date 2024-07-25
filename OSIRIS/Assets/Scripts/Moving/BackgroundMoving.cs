@@ -9,7 +9,7 @@ public class BackgroundMoving : MonoBehaviour
 
     private void Update()
     {
-        targetPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+        targetPos = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
 
         if (transform.position.x + length < targetPos.x)
         {
