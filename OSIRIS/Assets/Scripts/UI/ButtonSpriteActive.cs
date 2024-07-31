@@ -17,17 +17,27 @@ public class ButtonSpriteActive : MonoBehaviour, IPointerEnterHandler, IPointerE
 
         if (buttonImage == null)
         {
-            buttonImage.sprite = spriteAry[0];
+            SetBasicImage();
         }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        buttonImage.sprite = spriteAry[1];
+        SetActiveImage();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (!isButtonActive) buttonImage.sprite = spriteAry[0];
+        if (!isButtonActive) SetBasicImage();
+    }
+
+    public void SetBasicImage()
+    {
+        buttonImage.sprite = spriteAry[0];
+    }
+
+    public void SetActiveImage()
+    {
+        buttonImage.sprite = spriteAry[1];
     }
 }
