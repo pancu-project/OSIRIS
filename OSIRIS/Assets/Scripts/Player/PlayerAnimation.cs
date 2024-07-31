@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
+    PauseButton pause;
 
     //점프
     private bool isJump = false;
@@ -22,7 +23,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Start()
     {
-      
+        pause = GameObject.Find("Pause").GetComponent<PauseButton>();
         this.playerRigidbody = this.GetComponent<Rigidbody2D>();
         this.animator = this.GetComponent<Animator>();
 
@@ -43,7 +44,7 @@ public class PlayerAnimation : MonoBehaviour
     }
     private void Update()
     {
-        
+        if (!pause.IsTimeFlow()) { return; }
 
         //점프
         if (Input.GetKeyDown(KeyCode.UpArrow) && JumpCount < 2)

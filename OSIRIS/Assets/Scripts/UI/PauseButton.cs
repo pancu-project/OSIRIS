@@ -8,8 +8,8 @@ public class PauseButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 {
     [SerializeField] Sprite[] pauseImage;
 
-    Image buttonImage;
-    bool isTimeFlow = true;
+    private Image buttonImage;
+    private bool isTimeFlow = true;
 
     private void Start()
     {
@@ -64,4 +64,6 @@ public class PauseButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     {
         if (isTimeFlow) buttonImage.sprite = pauseImage[0];
     }
+
+    public bool IsTimeFlow() { return isTimeFlow; }
 }
