@@ -32,7 +32,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6, y: -2, z: 0}
+<<<<<<< HEAD
+  m_LocalScale: {x: 0.06, y: 0.06, z: 1}
+=======
   m_LocalScale: {x: 0.06459628, y: 0.058224417, z: 0.9975498}
+>>>>>>> 1a05bd6d84bcccc02c97f5ed79794de69addb383
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -199,6 +203,40 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
+<<<<<<< HEAD
+  m_Offset: {x: 0, y: -2.0479412}
+  serializedVersion: 2
+  m_Radius: 16.70744
+--- !u!114 &8749429141364453601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399373904484665806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b982e05e955bd46831ca6e1423422f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 7
+--- !u!114 &7816726933225426226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399373904484665806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18cad8b32ac0044ba4298000c4e69e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JumpCount: 0
+  jumpForce: 13
+  gravityScaleDuringJump: 5
+=======
   m_Offset: {x: -2.8871827, y: -5.812607}
   m_Size: {x: 17.960567, y: 32.925915}
   m_Direction: 0
+>>>>>>> 1a05bd6d84bcccc02c97f5ed79794de69addb383

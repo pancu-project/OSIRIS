@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class BackgroundMoving : MonoBehaviour
 {
-    Vector2 targetPos;
     [SerializeField] float length = 30.23f; // 이미지 길이
+    [SerializeField] float moveSpeed = 0f; // 이미지 길이
+    Vector2 targetPos;
+    Vector3 movePos;
 
     private void Update()
     {
         targetPos = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
+        movePos = new Vector3(moveSpeed * Time.deltaTime, 0);
+
+        transform.Translate(movePos);
 
         if (transform.position.x + length < targetPos.x)
         {
