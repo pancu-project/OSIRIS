@@ -29,8 +29,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8410504496389962861}
-  - {fileID: 1265793562356868151}
+  - {fileID: 1606057173865133582}
+  - {fileID: 8313857886859374164}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4162173156785298724
@@ -101,14 +101,26 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -797417847
       objectReference: {fileID: 0}
+    - target: {fileID: 5378357730149905264, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971333912251668518, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
+      propertyPath: length
+      value: 30.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971333912251668518, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
+      propertyPath: moveSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
---- !u!4 &1265793562356868151 stripped
+--- !u!4 &8313857886859374164 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2905387899905866003, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5378357730149905264, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
   m_PrefabInstance: {fileID: 4162173156785298724}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6695198574902068606
@@ -179,13 +191,21 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -797417847
       objectReference: {fileID: 0}
+    - target: {fileID: 5971333912251668518, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
+      propertyPath: length
+      value: 30.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5971333912251668518, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
+      propertyPath: moveSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
---- !u!4 &8410504496389962861 stripped
+--- !u!4 &1606057173865133582 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2905387899905866003, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5378357730149905264, guid: a899e5ed90023814e9bf9fa3ebf95343, type: 3}
   m_PrefabInstance: {fileID: 6695198574902068606}
   m_PrefabAsset: {fileID: 0}

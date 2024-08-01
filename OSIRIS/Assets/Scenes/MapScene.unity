@@ -319,6 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b9aa742bcdc793488bea24a5b524181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentStage: 1
 --- !u!1 &1641342950
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +412,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2101184928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4076304767616157872, guid: 6a9c8158720c9c54ea95d87822ab8d88, type: 3}
+  m_PrefabInstance: {fileID: 338985067400193534}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &338985067400193534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -560,6 +566,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stage
       objectReference: {fileID: 0}
+    - target: {fileID: 4998937430489992646, guid: 77180d6c01797f341a1819943c721201, type: 3}
+      propertyPath: lockedStagePanel
+      value: 
+      objectReference: {fileID: 2101184928}
+    - target: {fileID: 5566405435778267495, guid: 77180d6c01797f341a1819943c721201, type: 3}
+      propertyPath: lockedStagePanel
+      value: 
+      objectReference: {fileID: 2101184928}
+    - target: {fileID: 7869875304541884380, guid: 77180d6c01797f341a1819943c721201, type: 3}
+      propertyPath: lockedStagePanel
+      value: 
+      objectReference: {fileID: 2101184928}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
