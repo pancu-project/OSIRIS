@@ -645,41 +645,9 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2016653762800143896, guid: 873152614cf463c4795089b590003fc6, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2016653762800143896, guid: 873152614cf463c4795089b590003fc6, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2016653762800143896, guid: 873152614cf463c4795089b590003fc6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2016653762800143896, guid: 873152614cf463c4795089b590003fc6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6519357728576790177, guid: 873152614cf463c4795089b590003fc6, type: 3}
       propertyPath: m_Name
       value: UICanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 6601521988499344918, guid: 873152614cf463c4795089b590003fc6, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6601521988499344918, guid: 873152614cf463c4795089b590003fc6, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6601521988499344918, guid: 873152614cf463c4795089b590003fc6, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6601521988499344918, guid: 873152614cf463c4795089b590003fc6, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7041439399694248865, guid: 873152614cf463c4795089b590003fc6, type: 3}
       propertyPath: m_Pivot.x

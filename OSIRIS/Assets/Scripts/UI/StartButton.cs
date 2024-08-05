@@ -20,4 +20,12 @@ public class StartButton : MonoBehaviour
 
         SceneManager.LoadScene("MapScene");
     }
+
+    private void Update()
+    {
+        if (howToPlayPanel.activeSelf && Input.GetKeyDown(KeyCode.Escape))
+        {
+            howToPlayPanel.SetActive(false);
+        }
+    }
 }
