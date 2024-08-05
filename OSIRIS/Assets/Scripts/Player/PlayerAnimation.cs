@@ -28,13 +28,19 @@ public class PlayerAnimation : MonoBehaviour
     private Rigidbody2D playerRigidbody;
     //리지드바디 컴포넌트
 
+    private Collider2D playerCollider; // 콜라이더 컴포넌트 추가
+    private Collider2D slideCollider; // 슬라이드 콜라이더 컴포넌트 추가
+    private Collider2D jumpReset;// 점프 초기화 콜라이더 컴포넌트 추가
 
     private void Start()
     {
         pause = GameObject.Find("Pause").GetComponent<PauseButton>();
         this.playerRigidbody = this.GetComponent<Rigidbody2D>();
         this.animator = this.GetComponent<Animator>();
- 
+
+        playerCollider = GetComponent<Collider2D>(); // 콜라이더 컴포넌트 가져오기
+        slideCollider = transform.Find("SlidingCollide").GetComponent<Collider2D>();
+        jumpReset = transform.Find("JumpReset").GetComponent<Collider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -71,6 +77,10 @@ public class PlayerAnimation : MonoBehaviour
         animator.SetBool("Flying", true);
         animator.SetTrigger("isFly");
 
+        playerCollider.enabled = false; // 물약 섭취시 콜라이더 비활성화
+        slideCollider.enabled = false; // 물약 섭취시 콜라이더 비활성화
+        jumpReset.enabled = false; // 물약 섭취시 콜라이더 비활성화
+
         //Vector3 newPosition = transform.position;
         //newPosition.y = FlyYPosition;
         //transform.position = newPosition;
@@ -97,7 +107,10 @@ public class PlayerAnimation : MonoBehaviour
         isFly = false;
         animator.SetBool("Flying", false);
         animator.SetTrigger("BackRun");
-        
+
+        playerCollider.enabled = true; // 스킬 종료 후 콜라이더 활성화
+        slideCollider.enabled = true; //  스킬 종료 후 콜라이더 활성화
+        jumpReset.enabled = true; // 스킬 종료 후 콜라이더 활성화
 
     }
 
@@ -155,6 +168,9 @@ public class PlayerAnimation : MonoBehaviour
         {
             isSlide = true;
             animator.SetBool("isSlide", true);
+
+            playerCollider.enabled = false; // 슬라이딩 시작 시 콜라이더 비활성화
+
             Debug.Log("Slide!");
         }
     }
@@ -165,6 +181,9 @@ public class PlayerAnimation : MonoBehaviour
         {
             isSlide = false;
             animator.SetBool("isSlide", false);
+
+            playerCollider.enabled = true; // 슬라이딩 종료 시 콜라이더 활성화
+
             Debug.Log("Back to Run!");
         }
     }
