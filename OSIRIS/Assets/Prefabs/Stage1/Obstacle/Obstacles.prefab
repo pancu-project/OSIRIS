@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3446251562315060710}
   m_Layer: 0
   m_Name: Slide
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 3353781558000609599}
   m_Layer: 0
   m_Name: DoubleJump
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -270,6 +270,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -343,6 +347,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -419,6 +427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -494,6 +506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -556,6 +572,18 @@ PrefabInstance:
     - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
       propertyPath: m_Name
       value: Pillar2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647613651110098781, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829621713249502518, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -631,6 +659,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -701,6 +733,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: Pillar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -776,13 +812,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -912,6 +964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -987,6 +1043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -1058,6 +1118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallPottery1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1127,6 +1191,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1201,6 +1281,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -1277,6 +1361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -1351,6 +1439,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -1427,6 +1519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -1501,6 +1597,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -1577,6 +1677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -1599,6 +1703,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1714,13 +1822,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -1850,6 +1974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -1924,6 +2052,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -2000,6 +2132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -2074,6 +2210,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -2150,6 +2290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -2225,6 +2369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -2295,6 +2443,18 @@ PrefabInstance:
     - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
       propertyPath: m_Name
       value: Pillar2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647613651110098781, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829621713249502518, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2369,6 +2529,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -2445,6 +2609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -2520,6 +2688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -2542,6 +2714,10 @@ PrefabInstance:
     - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_Name
       value: SmallPillar2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4151973358819549242, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2604,6 +2780,10 @@ PrefabInstance:
     - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_Name
       value: SmallPillar2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4151973358819549242, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2715,6 +2895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallPottery1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2785,6 +2969,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2854,6 +3054,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2928,6 +3144,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -3004,6 +3224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -3079,13 +3303,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -3164,6 +3404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -3234,6 +3478,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -3312,6 +3572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -3383,6 +3647,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647613651110098781, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829621713249502518, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3444,6 +3720,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3518,6 +3810,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -3594,6 +3890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -3668,6 +3968,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -3744,6 +4048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -3818,6 +4126,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -3894,6 +4206,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -3956,6 +4272,10 @@ PrefabInstance:
     - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
       propertyPath: m_Name
       value: Pottery3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4030,6 +4350,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -4106,6 +4430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -4181,6 +4509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -4251,6 +4583,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -4329,6 +4677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -4399,6 +4751,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4473,6 +4841,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -4549,6 +4921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -4623,6 +4999,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -4699,6 +5079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -4773,6 +5157,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -4849,6 +5237,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -4923,6 +5315,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -4999,6 +5395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -5061,6 +5461,18 @@ PrefabInstance:
     - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
       propertyPath: m_Name
       value: Pillar2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647613651110098781, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829621713249502518, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5136,6 +5548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -5206,6 +5622,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5280,6 +5712,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -5356,6 +5792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -5431,13 +5871,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -5516,6 +5972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -5590,6 +6050,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -5666,6 +6130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -5741,6 +6209,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -5811,6 +6283,10 @@ PrefabInstance:
     - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
       propertyPath: m_Name
       value: SmallPottery1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5886,6 +6362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -5948,6 +6428,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6023,6 +6519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -6042,6 +6542,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7694114475487443924}
     m_Modifications:
+    - target: {fileID: 1655962984195722479, guid: f07be719f6092764380314c236be2a06, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6824205338800085061, guid: f07be719f6092764380314c236be2a06, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6086,6 +6590,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pottery3
       objectReference: {fileID: 0}
+    - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444130241865508961, guid: f07be719f6092764380314c236be2a06, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102636612519657827, guid: f07be719f6092764380314c236be2a06, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6107,6 +6623,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6226,6 +6746,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallPottery1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6300,6 +6824,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -6322,6 +6850,10 @@ PrefabInstance:
     - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_Name
       value: SmallPillar2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4151973358819549242, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6425,6 +6957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pottery1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6498,6 +7034,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -6574,6 +7114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -6649,6 +7193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -6711,6 +7259,22 @@ PrefabInstance:
     - target: {fileID: 818583786982902848, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
       propertyPath: m_Name
       value: Pottery2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 818583786982902848, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380401332996892376, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827135507513902989, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6786,13 +7350,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6815,6 +7395,18 @@ PrefabInstance:
     - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_Name
       value: SmallPillar2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1508467543643651742, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313074276530677543, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4151973358819549242, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6930,6 +7522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -6952,6 +7548,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7075,6 +7675,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -7149,6 +7753,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -7225,6 +7833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -7299,6 +7911,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -7375,6 +7991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -7450,6 +8070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -7513,6 +8137,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pottery3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7534,6 +8162,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7649,6 +8281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -7719,6 +8355,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7793,6 +8445,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -7869,6 +8525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -7944,6 +8604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -8006,6 +8670,18 @@ PrefabInstance:
     - target: {fileID: 818583786982902848, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
       propertyPath: m_Name
       value: Pottery2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 818583786982902848, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827135507513902989, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8080,6 +8756,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -8156,6 +8836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -8231,6 +8915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -8301,6 +8989,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -8379,6 +9083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -8453,6 +9161,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -8529,13 +9241,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -8612,6 +9340,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8735,6 +9467,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -8809,6 +9545,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -8885,6 +9625,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -8959,6 +9703,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -9035,6 +9783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -9109,6 +9861,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -9185,6 +9941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -9259,6 +10019,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -9335,6 +10099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -9410,6 +10178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -9481,6 +10253,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallPottery1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9550,6 +10326,10 @@ PrefabInstance:
     - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
       propertyPath: m_Name
       value: SmallPottery1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9624,6 +10404,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -9700,6 +10484,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -9774,6 +10562,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -9850,6 +10642,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -9925,13 +10721,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -10040,6 +10852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -10103,6 +10919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pottery4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8544475842634693204, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10124,6 +10944,18 @@ PrefabInstance:
     - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_Name
       value: SmallPillar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1508467543643651742, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3313074276530677543, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4151973358819549242, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10186,6 +11018,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10297,6 +11133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pottery3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10370,6 +11210,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -10446,6 +11290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -10509,6 +11357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pottery1
       objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10530,6 +11382,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10592,6 +11448,10 @@ PrefabInstance:
     - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_Name
       value: SmallPillar2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 937321350477683632, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 4151973358819549242, guid: e6fa4559d25035d4aa5c850543330619, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10707,6 +11567,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -10782,6 +11646,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -10852,6 +11720,10 @@ PrefabInstance:
     - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
       propertyPath: m_Name
       value: SmallPottery1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10926,6 +11798,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -11002,6 +11878,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -11077,6 +11957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -11147,6 +12031,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11221,6 +12121,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -11297,6 +12201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -11371,6 +12279,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -11447,6 +12359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -11506,9 +12422,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4535619943407167251, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5230933393228950593, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6151731761649812248, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806504459225575379, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8544475842634693204, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
       propertyPath: m_Name
       value: Pottery4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544475842634693204, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11584,6 +12520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -11647,6 +12587,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pottery2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 818583786982902848, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380401332996892376, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827135507513902989, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11668,6 +12624,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11787,6 +12747,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -11853,6 +12817,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: Pillar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11927,6 +12895,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -12003,6 +12975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -12078,13 +13054,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -12238,6 +13230,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647613651110098781, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829621713249502518, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12312,6 +13316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -12382,6 +13390,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12456,6 +13480,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -12532,6 +13560,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -12594,6 +13626,10 @@ PrefabInstance:
     - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
       propertyPath: m_Name
       value: Pottery1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12664,6 +13700,10 @@ PrefabInstance:
     - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
       propertyPath: m_Name
       value: SmallPottery1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12739,13 +13779,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -12863,6 +13919,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647613651110098781, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829621713249502518, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12937,6 +14005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -12999,6 +14071,10 @@ PrefabInstance:
     - target: {fileID: 8544475842634693204, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
       propertyPath: m_Name
       value: Pottery4 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544475842634693204, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13073,6 +14149,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -13149,6 +14229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -13171,6 +14255,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13286,6 +14374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -13360,6 +14452,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -13436,6 +14532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -13455,6 +14555,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3446251562315060710}
     m_Modifications:
+    - target: {fileID: 3245373243003090169, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5115
+      objectReference: {fileID: 0}
+    - target: {fileID: 3245373243003090169, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 64.0401
+      objectReference: {fileID: 0}
     - target: {fileID: 4329856651711769816, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -31
@@ -13499,6 +14607,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar2
       objectReference: {fileID: 0}
+    - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647613651110098781, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829621713249502518, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13520,6 +14640,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13635,6 +14759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -13697,6 +14825,10 @@ PrefabInstance:
     - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
       propertyPath: m_Name
       value: Pottery3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13772,6 +14904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -13834,6 +14970,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13905,6 +15057,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallPottery1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13966,6 +15122,10 @@ PrefabInstance:
     - target: {fileID: 7608501475050976857, guid: f89a0ff17622f5043964a25399fec734, type: 3}
       propertyPath: m_Name
       value: SmallPillar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7608501475050976857, guid: f89a0ff17622f5043964a25399fec734, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14036,6 +15196,18 @@ PrefabInstance:
     - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
       propertyPath: m_Name
       value: Pillar2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338489531347330624, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647613651110098781, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829621713249502518, guid: 74bb2367dde8ef443a902bede4fd774a, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14110,6 +15282,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -14186,6 +15362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -14261,6 +15441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -14283,6 +15467,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14398,6 +15586,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -14460,6 +15652,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14531,6 +15739,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14592,6 +15816,10 @@ PrefabInstance:
     - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
       propertyPath: m_Name
       value: Pottery3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14667,6 +15895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -14689,6 +15921,10 @@ PrefabInstance:
     - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_Name
       value: Cat (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017407572077944403, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7213979559101031064, guid: cef8bc9d7436c094ba6fe667bd68ed8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14812,6 +16048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -14882,6 +16122,10 @@ PrefabInstance:
     - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
       propertyPath: m_Name
       value: SmallPottery1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14956,6 +16200,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -15032,13 +16280,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -15156,6 +16420,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pottery2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 818583786982902848, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380401332996892376, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827135507513902989, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15229,6 +16509,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -15305,6 +16589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -15367,6 +16655,10 @@ PrefabInstance:
     - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
       propertyPath: m_Name
       value: Pottery3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257843784264494462, guid: f07be719f6092764380314c236be2a06, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15442,13 +16734,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar3 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 3194991436874222626, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5558548991965509506, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_FlipY
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -15578,6 +16886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -15640,6 +16952,10 @@ PrefabInstance:
     - target: {fileID: 8544475842634693204, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
       propertyPath: m_Name
       value: Pottery4 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544475842634693204, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15710,6 +17026,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324499414857913572, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
@@ -15788,6 +17120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -15850,6 +17186,10 @@ PrefabInstance:
     - target: {fileID: 8544475842634693204, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
       propertyPath: m_Name
       value: Pottery4 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8544475842634693204, guid: 787829eeb1e6aaa41b95fddc24427907, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15924,6 +17264,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -16000,6 +17344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -16070,6 +17418,10 @@ PrefabInstance:
     - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
       propertyPath: m_Name
       value: SmallPottery1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16144,6 +17496,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -16220,6 +17576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -16294,6 +17654,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -16370,6 +17734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -16445,6 +17813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -16507,6 +17879,22 @@ PrefabInstance:
     - target: {fileID: 818583786982902848, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
       propertyPath: m_Name
       value: Pottery2
+      objectReference: {fileID: 0}
+    - target: {fileID: 818583786982902848, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380401332996892376, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827135507513902989, guid: 4c06c598fe7b7534b9106c06cc1cbec6, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16581,6 +17969,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -16657,6 +18049,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -16731,6 +18127,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -16807,6 +18207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -16881,6 +18285,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -16957,6 +18365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -17019,6 +18431,10 @@ PrefabInstance:
     - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
       propertyPath: m_Name
       value: Pottery1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940563398479737271, guid: d2cfc1b4a112d864b83d403a0ad67877, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17093,6 +18509,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
@@ -17169,6 +18589,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -17239,6 +18663,22 @@ PrefabInstance:
     - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
       propertyPath: m_Name
       value: Pillar3 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736297221619434631, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367956113536959659, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5748967170205941515, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9135887985327480690, guid: 5ebc61eb03c5da74dab3f034ec981872, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17314,6 +18754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlideObstacle (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
     m_RemovedGameObjects: []
@@ -17388,6 +18832,10 @@ PrefabInstance:
     - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
       propertyPath: m_Name
       value: SlideObstacle (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382528274778465107, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8415861743048651548, guid: 28025d7d521d1574db3160fc1d14fb82, type: 3}

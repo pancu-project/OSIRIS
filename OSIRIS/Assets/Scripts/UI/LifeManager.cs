@@ -9,9 +9,17 @@ public class LifeManager : MonoBehaviour
     [SerializeField] GameObject heart;
     private List<Image> hearts;
 
+    public PlayerAnimation PlayerAnimation;
+
     private void Awake()
     {
         hearts = gameObject.GetComponentsInChildren<Image>().ToList<Image>();
+        
+    }
+
+    private void Start()
+    {
+        PlayerAnimation = GameObject.Find("Player").GetComponent<PlayerAnimation>();
     }
 
     private void Update()
@@ -26,10 +34,23 @@ public class LifeManager : MonoBehaviour
 
     public void TestDeleteButton()
     {
-        hearts = gameObject.GetComponentsInChildren<Image>().ToList<Image>();
-        Destroy(hearts[hearts.Count - 1].gameObject);
-    }
+        if (hearts != null && hearts.Count > 0)
+        {
+            Image heartToRemove = hearts[hearts.Count - 1];
+            if (heartToRemove != null)
+            {
+                Destroy(heartToRemove.gameObject);
+                hearts.Remove(heartToRemove); 
 
+                Debug.Log("충돌 하트 개수 ** : " + hearts.Count);
+
+                if (hearts.Count == 0)
+                {                    
+                   PlayerAnimation.GameOver(); 
+                }
+            }
+        }
+    }
     public void TestAddButton()
     {
         hearts.Add(Instantiate(heart, this.transform).GetComponent<Image>());
