@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7626619330345568641}
   - component: {fileID: 5464561516222034253}
   - component: {fileID: 5451222721140393690}
-  - component: {fileID: 2782269350816248828}
+  - component: {fileID: 1483581461328142216}
   m_Layer: 5
   m_Name: Close Button
   m_TagString: Untagged
@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: -50, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &4864957455115346956
@@ -134,7 +134,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2782269350816248828}
+      - m_Target: {fileID: 1483581461328142216}
         m_TargetAssemblyTypeName: CloseButton, Assembly-CSharp
         m_MethodName: CloseButtonClicked
         m_Mode: 1
@@ -162,7 +162,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: deb53ab3287d1ca4a8324a47b0298196, type: 3}
   - {fileID: 21300000, guid: 3aab3f1528d2bad4fb350967ae42e95c, type: 3}
   isButtonActive: 0
---- !u!114 &2782269350816248828
+--- !u!114 &1483581461328142216
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f58f5168ce811aa4bbe5a7dea08575c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0c34d4de32521d48bdb46ce004b9f69, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
