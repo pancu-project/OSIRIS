@@ -3,22 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - bottom
-  - potion
-  - Obstacle
-  - Dead
-  - repo1
-  - repo2
-  - repo3
-  - repo4
-  - repo5
-  - repo6
-  - repo7
-  - repo8
-  - repo9
-  - repo10
-  - repo11
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -55,19 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 3497549449
-    locked: 0
-  - name: Obstacle
-    uniqueID: 2708208737
-    locked: 0
-  - name: Item
-    uniqueID: 3742897013
-    locked: 0
-  - name: Platform
-    uniqueID: 1193980279
-    locked: 0
-  - name: Player
-    uniqueID: 2490442867
     locked: 0

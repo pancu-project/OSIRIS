@@ -6,6 +6,7 @@ public class SlideObstacleMovement : MonoBehaviour
 {
     [SerializeField] float playerDistance = 10f;
     [SerializeField] float moveSpeed = 20f;
+    [SerializeField] float plusLength;
 
     private float height;
     private BoxCollider2D collider;
@@ -23,7 +24,7 @@ public class SlideObstacleMovement : MonoBehaviour
         height = collider.size.y;
 
         targetPos = transform.position;
-        transform.position = new Vector2(transform.position.x, transform.position.y + height);
+        transform.position = new Vector2(transform.position.x, transform.position.y + height + plusLength);
     }
 
     private void Update()
