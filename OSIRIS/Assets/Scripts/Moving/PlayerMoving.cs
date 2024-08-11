@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMoving : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 7f;
+    [SerializeField] public float moveSpeed = 7f;
 
     Camera mainCamera;
     Vector3 movePos;
