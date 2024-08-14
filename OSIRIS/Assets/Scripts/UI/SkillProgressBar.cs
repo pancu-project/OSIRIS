@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SkillProgressBar : MonoBehaviour
 {
     private Slider skillSlider;
+   
 
     private void Start()
     {
@@ -14,14 +15,26 @@ public class SkillProgressBar : MonoBehaviour
         {
             Debug.LogError("Slider component not found on " + gameObject.name);
         }
+    }
 
-        //skillSlider.gameObject.SetActive(false); // Initially hide the slider
+    public void falseActive()
+    {
+        //this.gameObject.SetActive(false);
+    }
+
+    public void trueActive()
+    {
+
+        //this.gameObject.SetActive(true);
     }
 
     public void StartProgressBar(float duration)
     {
+        Debug.Log(skillSlider.maxValue);
         skillSlider.maxValue = duration;
+        Debug.Log(skillSlider.maxValue);
         skillSlider.value = duration;
+        Debug.Log(skillSlider.value);
         skillSlider.gameObject.SetActive(true);
         StartCoroutine(UpdateProgressBar(duration));
     }
@@ -42,7 +55,7 @@ public class SkillProgressBar : MonoBehaviour
     
     private void EndProgressBar()
     {
-        skillSlider.gameObject.SetActive(false);
+       skillSlider.gameObject.SetActive(false);
     }
 
 }

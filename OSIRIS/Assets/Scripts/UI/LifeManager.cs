@@ -53,7 +53,10 @@ public class LifeManager : MonoBehaviour
     }
     public void TestAddButton()
     {
-        hearts.Add(Instantiate(heart, this.transform).GetComponent<Image>());
-        hearts = gameObject.GetComponentsInChildren<Image>().ToList<Image>();
+        //hearts.Add(Instantiate(heart, this.transform).GetComponent<Image>());
+        //hearts = gameObject.GetComponentsInChildren<Image>().ToList<Image>();
+        
+        Image newHeart = Instantiate(heart, this.transform).GetComponent<Image>();
+        hearts.Add(newHeart);
     }
 }
