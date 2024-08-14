@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a18cad8b32ac0044ba4298000c4e69e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 0}
   Deadcnt: 0
   LifeManager: {fileID: 0}
   JumpCount: 0
@@ -174,7 +175,7 @@ MonoBehaviour:
   gravityScaleDuringJump: 5
   FlyDuration: 5
   FlyYPosition: -0.75
-  invincibleDuration: 3
+  invincibleDuration: 2
   playerCollider: {fileID: 0}
   slideCollider: {fileID: 0}
   foot: {fileID: 0}
@@ -305,6 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445dc21fe29082d46b0a14dc74a7b4b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 0}
 --- !u!1 &4660064026190729450
 GameObject:
   m_ObjectHideFlags: 0
