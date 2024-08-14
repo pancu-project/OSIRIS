@@ -8,17 +8,19 @@ using UnityEngine.UI;
 public class StartButton : MonoBehaviour
 {
     [SerializeField] GameObject howToPlayPanel;
-    private int clickCount = 0; // 최초 클릭 시 게임 방법 소개
 
     public void StartButtonClicked()
     {
-        if (++clickCount == 1)
+        if (!DataManager.Instance.currentData.isHowToShown)
         {
             howToPlayPanel.SetActive(true);
-            return;
+            DataManager.Instance.currentData.isHowToShown = true;
+            DataManager.Instance.SaveData();
         }
-
-        SceneManager.LoadScene("MapScene");
+        else
+        {
+            SceneManager.LoadScene("MapScene");
+        }
     }
 
     private void Update()

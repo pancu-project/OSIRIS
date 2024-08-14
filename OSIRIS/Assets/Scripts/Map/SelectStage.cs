@@ -23,7 +23,7 @@ public class SelectStage : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (int.Parse(Regex.Replace(gameObject.name, @"[^0-9]", "")) <= GameManager.Instance.currentStage)
+                if (int.Parse(Regex.Replace(gameObject.name, @"[^0-9]", "")) <= DataManager.Instance.currentData.stageLevel)
                 {
                     GameManager.Instance.stage = gameObject.name;
                     SceneManager.LoadScene("PlayerSelectScene");

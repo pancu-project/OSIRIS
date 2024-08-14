@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 427899356853501064}
   - component: {fileID: 5465816217665095044}
   - component: {fileID: 660535722050795180}
-  - component: {fileID: 232900040701386517}
   - component: {fileID: 7798418649060573910}
   m_Layer: 5
   m_Name: Parts Button
@@ -122,18 +121,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &232900040701386517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6884376221811541979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbe30d589c0b61442b9f6a80ae05817f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7798418649060573910
 MonoBehaviour:
   m_ObjectHideFlags: 0
