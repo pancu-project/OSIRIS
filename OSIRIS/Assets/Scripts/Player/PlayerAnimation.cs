@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class PlayerAnimation : MonoBehaviour
 {
     PauseButton pause;
-
+    
     //플레이어 속도 조절
     private PlayerMoving playerMoving;
     private SpriteRenderer sprite;
     Color originalColor;
+
+    // 게임 오버 패널 추가
+    public GameObject gameOverPanel;
 
     //시체 조각
     public int Deadcnt = 0;
@@ -45,7 +48,7 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] private float invincibleDuration = 2f; // 무적 상태 유지 시간
 
     //die 모션
-    private bool isDie = false;
+    public bool isDie = false;
 
     private Animator animator; //에니메이터 컴포턴트
     private Rigidbody2D playerRigidbody; //리지드바디 컴포넌트
@@ -77,6 +80,9 @@ public class PlayerAnimation : MonoBehaviour
         //스킬 UI 진행바 컴포넌트
         skillProgressBar = GameObject.Find("Skill Progress Gauge").GetComponent<SkillProgressBar>(); 
         skillProgressBar.falseActive(); // 비활성화
+
+        // 정상으로 원상복귀
+        Time.timeScale = 1f;
     }
     
     //충돌 감지 - 포션 감지 / 장애물 감지 (항아리,고양이,기둥) / 시체 조각 감지
@@ -94,6 +100,7 @@ public class PlayerAnimation : MonoBehaviour
             if ((colliderRole == "sildeCollider" || colliderRole == "totalCollider") && other.CompareTag("Obstacle") && !isDie) // 장애물 
             {
                 StartInvincibleState();
+                Debug.Log("장애물이랑 충돌~");
                 minusHeart();
             }
 
@@ -127,7 +134,7 @@ public class PlayerAnimation : MonoBehaviour
         isDie = true;
         animator.SetBool("isDie", true);
         playerMoving.moveSpeed = 0;
-
+        
         playerCollider.enabled = false; 
         slideCollider.enabled = false;
     }
@@ -170,6 +177,13 @@ public class PlayerAnimation : MonoBehaviour
 
     private void LateUpdate()
     {
+        // die 애니 실행 후 게임 오버 띄우기
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("die"))
+        {
+            gameOverPanel.SetActive(true);
+            Time.timeScale = 0f;
+        }
+
         // 스킬 애니메이션 상태에서 위치 조정      
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fly"))
         {

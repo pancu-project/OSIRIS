@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class player2 : MonoBehaviour
 {
+    public GameObject gameOverPanel;
+
     private PlayerAnimation playerAnimation;
     private PlayerMoving playerMoving;
     private LifeManager lifeManager;
@@ -84,17 +86,20 @@ public class player2 : MonoBehaviour
     {
         Deadcnt = playerAnimation.Deadcnt;
         ShowImage(Deadcnt);
-
+        
         if (transform.position.x >= 53f && transform.position.y <= -0.6f && Deadcnt == 0) // 1번째 시체조각 회수 못할 시 리셋
         {
             resetPosition1 = new Vector3(37.5f, 3.23f, transform.position.z);
+          
             transform.position = resetPosition1;
+           
             Debug.Log("시체 조각 1 회수 못함!!");
         }
 
         if (transform.position.x >= 357f && transform.position.y <= -2f && Deadcnt == 1) // 2번째 시체조각 회수 못할 시 리셋
         {
             resetPosition2 = new Vector3(344f, -0.79f, transform.position.z);
+            
             transform.position = resetPosition2;
             Debug.Log("시체 조각 2 회수 못함!!");
         }
@@ -102,6 +107,7 @@ public class player2 : MonoBehaviour
         if (transform.position.x >= 540f && transform.position.y <= -2f && Deadcnt == 2) // 3번째 시체조각 회수 못할 시 리셋
         {
             resetPosition3 = new Vector3(533f, -2.8f, transform.position.z);
+            
             transform.position = resetPosition3;
             Debug.Log("시체 조각 3 회수 못함!!");
         }
@@ -109,6 +115,7 @@ public class player2 : MonoBehaviour
         if (transform.position.x >= 610.8f && transform.position.y <= -2f && Deadcnt == 3) // 4번째 시체조각 회수 못할 시 리셋
         {
             resetPosition4 = new Vector3(600f, 2.22f, transform.position.z);
+           
             transform.position = resetPosition4;
             Debug.Log("시체 조각 4 회수 못함!!");
         }
@@ -116,8 +123,15 @@ public class player2 : MonoBehaviour
         if (transform.position.x >= 637f && transform.position.y <= -2f && Deadcnt == 4) // 5번째 시체조각 회수 못할 시 리셋
         {
             resetPosition5 = new Vector3(611f, -2.8f, transform.position.z);
+          
             transform.position = resetPosition5;
             Debug.Log("시체 조각 5 회수 못함!!");
+        }
+
+        if(transform.position.x >= 691f)
+        {
+            gameOverPanel.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class player1 : MonoBehaviour
 {
+    public GameObject gameOverPanel;
+
     private PlayerAnimation playerAnimation;
     private PlayerMoving playerMoving;
 
@@ -46,11 +48,12 @@ public class player1 : MonoBehaviour
     {
         Deadcnt = playerAnimation.Deadcnt;
         ShowImage(Deadcnt);
-
+        
         if (transform.position.x >= 295f && Deadcnt == 0) // 1번째 시체조각 회수 못할 시 리셋
         {
             resetPosition1 = new Vector3(287f, -1.79f, transform.position.z);
             transform.position = resetPosition1;
+            //playerMoving.heart = true;
             Debug.Log("시체 조각 1 회수 못함!!");
         }
 
@@ -58,7 +61,14 @@ public class player1 : MonoBehaviour
         {
             resetPosition2 = new Vector3(532.51f, 1.19f, transform.position.z);
             transform.position = resetPosition2;
+            
             Debug.Log("시체 조각 2 회수 못함!!");
+        }
+
+        if (transform.position.x >= 591f)
+        {
+            gameOverPanel.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 
