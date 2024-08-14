@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class silding : MonoBehaviour
 {
-    public PlayerAnimation playerAnimation;
+    private PlayerAnimation playerAnimation;
     public string colliderRole;
 
-    
     void Start()
     {
         playerAnimation = GetComponentInParent<PlayerAnimation>();
@@ -22,6 +21,4 @@ public class silding : MonoBehaviour
         }
     }
 
-    
-    
 }

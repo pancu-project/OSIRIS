@@ -3,7 +3,40 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Obstacle
+  - bottom
+  - Dead
+  - repo4
+  - repo9
+  - repo7
+  - repo2
+  - repo10
+  - repo5
+  - repo11
+  - repo6
+  - repo8
+  - repo3
+  - repo1
+  - potion
+  - repo12
+  - repo13
+  - repo14
+  - repo15
+  - repo16
+  - repo17
+  - repo18
+  - repo19
+  - repo20
+  - repo21
+  - repo22
+  - repo23
+  - repo24
+  - repo25
+  - repo26
+  - repo27
+  - repo28
+  - repo29
   layers:
   - Default
   - TransparentFX

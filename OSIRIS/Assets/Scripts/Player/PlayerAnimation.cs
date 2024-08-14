@@ -6,16 +6,13 @@ using UnityEngine.UI;
 public class PlayerAnimation : MonoBehaviour
 {
     PauseButton pause;
-    //플레이어 시체 조각 회수 못할 시 리셋 위치
-    private Vector3 resetPosition1;
-    private Vector3 resetPosition2;
 
     //플레이어 속도 조절
     private PlayerMoving playerMoving;
+    private SpriteRenderer sprite;
+    Color originalColor;
 
     //시체 조각
-    public DeadPartFull DeadPartFull1;
-    public DeadPartFull DeadPartFull2;
     public int Deadcnt = 0;
 
     //하트 추가 및 삭제
@@ -36,11 +33,12 @@ public class PlayerAnimation : MonoBehaviour
     //스킬 모션 - 매로 변신
     private bool isFly = false;
     private Coroutine transformationCoroutine;
-    [SerializeField] private float FlyDuration = 3f;
+    [SerializeField] public float FlyDuration = 3f;
     [SerializeField] private float FlyYPosition = -0.75f; // 변신 시 y 위치
 
     //충돌 모션
     private bool isCollide = false;
+    private bool trasition = false;
 
     // 충돌 후 무적 상태
     private bool isInvincible = false;
@@ -53,11 +51,9 @@ public class PlayerAnimation : MonoBehaviour
     private Rigidbody2D playerRigidbody; //리지드바디 컴포넌트
 
     //충돌 감지 콜라이더들
-    private Collider2D playerCollider; // 전체 충돌
-    private Collider2D slideCollider; // 슬라이드 충돌
-    private Collider2D foot; // 점프 초기화 (바닥 충돌)
-
-  
+    public Collider2D playerCollider; // 전체 충돌
+    public Collider2D slideCollider; // 슬라이드 충돌
+    public Collider2D foot; // 점프 초기화 (바닥 충돌)
 
     private void Start()
     {
@@ -70,19 +66,17 @@ public class PlayerAnimation : MonoBehaviour
         slideCollider = transform.Find("sliding").GetComponent<Collider2D>();
         foot = GetComponent<BoxCollider2D>();
 
-        //시체조각 컴포넌트
-        DeadPartFull1 = GameObject.Find("Dead1").GetComponent<DeadPartFull>();
-        DeadPartFull2 = GameObject.Find("Dead2").GetComponent<DeadPartFull>();
-
         //하트(목숨) 컴포넌트
         LifeManager = GameObject.Find("Life").GetComponent<LifeManager>();
 
         //플레이어 무빙 스크립트 컴포넌트
         playerMoving = GetComponent<PlayerMoving>();
+        sprite = GetComponent<SpriteRenderer>();
+        originalColor = sprite.color;
 
         //스킬 UI 진행바 컴포넌트
-        skillProgressBar = GameObject.Find("Skill Progress Gauge").GetComponent<SkillProgressBar>(); // 추가된 부분
-        
+        skillProgressBar = GameObject.Find("Skill Progress Gauge").GetComponent<SkillProgressBar>(); 
+        skillProgressBar.falseActive(); // 비활성화
     }
     
     //충돌 감지 - 포션 감지 / 장애물 감지 (항아리,고양이,기둥) / 시체 조각 감지
@@ -92,6 +86,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             if ((colliderRole == "sildeCollider" || colliderRole == "totalCollider") && other.CompareTag("potion") && !isFly) // 물약
             {
+                //skillProgressBar.trueActive();
                 StartTransformation();
                 Destroy(other.gameObject);
             }
@@ -106,47 +101,28 @@ public class PlayerAnimation : MonoBehaviour
             {
                 Destroy(other.gameObject);
                 Deadcnt++;
-                if (DeadPartFull1 != null && Deadcnt == 1)
-                {
-                    DeadPartFull1.ShowDeadImage();
-                }
-                else if (DeadPartFull2 != null && Deadcnt == 2)
-                {
-                    DeadPartFull2.ShowDeadImage();
-                }
+                Debug.Log("플레이션 애니: 시체조각" + Deadcnt);
             }
         }
     }
 
-    public void HandleCollision(string colliderRole, Collider2D collider) // 벽이랑 충돌하면 하트 소진
-    {
-        if (!isDie)
-        {
-            if (colliderRole == "sildeCollider" && collider.CompareTag("bottom")) // 장애물 
-            {
-                StartInvincibleState();
-                minusHeart();
-
-            }
-        }
-    }
-
-    public void minusHeart()//하트 감소 함수
+    public void minusHeart() // 하트 감소 함수
     {
         if (LifeManager != null)
         {
             LifeManager.TestDeleteButton();
         }
     }
-    public void reSpeed()
+
+    public void reSpeed() // 플레이어 속도 원상복구 함수
     {
-        if (!isDie)
+        if (!isDie) // 죽지 않았을 때만
         {
             playerMoving.moveSpeed = 7f;
         }
     }
 
-    public void GameOver()
+    public void GameOver() // 게임 오버 함수
     {
         isDie = true;
         animator.SetBool("isDie", true);
@@ -154,10 +130,6 @@ public class PlayerAnimation : MonoBehaviour
 
         playerCollider.enabled = false; 
         slideCollider.enabled = false;
-
-        playerRigidbody.velocity = Vector2.zero;
-        playerRigidbody.angularVelocity = 0f;
-
     }
 
     private void StartInvincibleState()
@@ -165,10 +137,10 @@ public class PlayerAnimation : MonoBehaviour
         if (!isInvincible) // 장애물 충돌 시 충돌 애니 실행
         {
             isInvincible = true;
-            playerRigidbody.velocity = Vector2.zero; // 속도를 0으로 설정하여 정지
-            playerMoving.moveSpeed = 5;
+            playerMoving.moveSpeed = 4;
             isCollide = true;
             animator.SetBool("isCollide", true);
+            sprite.color = new Color(1, 1, 1, 0.4f); //충돌 시 투명하게 바꾸기
             playerCollider.enabled = false; // 무적상태
             slideCollider.enabled = false;
             StartCoroutine(InvincibleRoutine());
@@ -178,7 +150,10 @@ public class PlayerAnimation : MonoBehaviour
     private IEnumerator InvincibleRoutine() // 충돌 시간
     {
         yield return new WaitForSeconds(invincibleDuration);
-        EndInvincibleState();
+        if (!trasition)
+        {
+            EndInvincibleState();
+        }
     }
 
     private void EndInvincibleState() //충돌 -> 달리기 모션 전환
@@ -186,27 +161,26 @@ public class PlayerAnimation : MonoBehaviour
         isInvincible = false;
         isCollide = false;
         animator.SetBool("isCollide", false);
+       
         reSpeed();
         playerCollider.enabled = true; // 무적상태 해제
         slideCollider.enabled = true;
+        sprite.color = originalColor; //투명도 원래대로 복구
     }
 
     private void LateUpdate()
     {
-        // 특정 애니메이션 상태에서 위치 조정
-        
+        // 스킬 애니메이션 상태에서 위치 조정      
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fly"))
         {
             Vector3 newPosition = transform.position;
             newPosition.y = FlyYPosition;
             transform.position = newPosition;
-        }
-        
+        }       
     }
 
     private void StartTransformation() //변신 시작
-    {
-   
+    {   
         isFly = true;
         animator.SetBool("Flying", true);
         animator.SetTrigger("isFly");
@@ -219,9 +193,8 @@ public class PlayerAnimation : MonoBehaviour
             StopCoroutine(transformationCoroutine);
         }
 
+        //Debug.Log(FlyDuration);
         skillProgressBar.StartProgressBar(FlyDuration);
-        
-
         transformationCoroutine = StartCoroutine(TransformationRoutine());
     }
 
@@ -230,26 +203,22 @@ public class PlayerAnimation : MonoBehaviour
         // 3초 동안 변신 상태 유지
          yield return new WaitForSeconds(FlyDuration);
         EndTransformation();
-
     }
 
     private void EndTransformation()//변신 종료
     {
-
         isFly = false;
         animator.SetBool("Flying", false);
         animator.SetTrigger("BackRun");
 
         playerCollider.enabled = true; // 스킬 종료 후 콜라이더 활성화
         slideCollider.enabled = true; //  스킬 종료 후 콜라이더 활성화
-      
-
     }
 
     // 충돌 관리 - 점프카운트 리셋 / 추락 시 하트 소진
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.otherCollider == foot && collision.gameObject.CompareTag("bottom"))
+        if (collision.otherCollider == foot && collision.gameObject.CompareTag("bottom") && !isDie)
         {
             isJump = false;
             JumpCount = 0;
@@ -258,138 +227,17 @@ public class PlayerAnimation : MonoBehaviour
             Debug.Log("Bottom!");
         }
 
-        //추락 시 하트 소진
-        if(collision.otherCollider == foot )
+        if (collision.otherCollider == slideCollider && collision.gameObject.CompareTag("bottom") && !isDie) // 장애물 
         {
-            if (collision.gameObject.CompareTag("repo1"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position= new Vector3(323.3f, -2.71f, transform.position.z);
-                reSpeed();
-            }
-            else if (collision.gameObject.CompareTag("repo2"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position = new Vector3(335.35f, -1.74f, transform.position.z);
-                reSpeed();
-            }
-            else if (collision.gameObject.CompareTag("repo3"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position = new Vector3(370.8f, -2.76f, transform.position.z);
-                reSpeed();
-            }
-            else if (collision.gameObject.CompareTag("repo4"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position = new Vector3(386.53f, 0.33f, transform.position.z);
-                reSpeed();
-            }
-            else if (collision.gameObject.CompareTag("repo5"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position = new Vector3(398.27f, -2.73f, transform.position.z);
-                reSpeed();
-            }
-            else if (collision.gameObject.CompareTag("repo6"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position = new Vector3(461.33f, 1.36f, transform.position.z);
-                reSpeed();
-            }
-            else if (collision.gameObject.CompareTag("repo7"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position = new Vector3(478.48f, -2.78f, transform.position.z);
-                reSpeed();
-            }
-            else if (collision.gameObject.CompareTag("repo8"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position = new Vector3(510.2f, -0.78f, transform.position.z);
-                reSpeed();
-            }
-            else if (collision.gameObject.CompareTag("repo9"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position = new Vector3(514.37f, 1.24f, transform.position.z);
-                reSpeed();
-            }
-            else if (collision.gameObject.CompareTag("repo10"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position = new Vector3(522.18f, 2.23f, transform.position.z);
-                reSpeed();
-            }
-            else if (collision.gameObject.CompareTag("repo11"))
-            {
-                Debug.Log("추락!!");
-                playerMoving.moveSpeed = 0;
-                minusHeart();
-
-                transform.position = new Vector3(549.47f, -2.71f, transform.position.z);
-                reSpeed();
-            }
-
-            if (LifeManager == null)
-            {
-                GameOver();
-            }
+            StartInvincibleState();
+            minusHeart();
         }
-
     }
-
-    
 
     private void Update()
     {
         if (!pause.IsTimeFlow()) { return; }
         if (isDie) { return; }
-
-        //시체 조각 회수 못할 시 리셋
-        //if (transform.position.x >= 295f && Deadcnt == 0) // 1번째 시체조각 회수 못할 시 리셋
-        //{
-        //    resetPosition1 = new Vector3(287f, -1.79f, transform.position.z);
-        //    transform.position = resetPosition1;
-        //    Debug.Log("시체 조각 1 회수 못함!!");
-        //}
-
-        //if (transform.position.x >= 545f && transform.position.y <= -2f && Deadcnt == 1) // 2번째 시체조각 회수 못할 시 리셋
-        //{
-        //    resetPosition2 = new Vector3(532.51f, 1.19f, transform.position.z);
-        //    transform.position = resetPosition2;
-        //    Debug.Log("시체 조각 2 회수 못함!!");
-        //}
 
         //점프
         if (Input.GetKeyDown(KeyCode.Space) && JumpCount < 2 && isSlide == false)
@@ -426,6 +274,15 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (!isSlide)
         {
+            if(isCollide)
+            {
+                trasition = true;
+                animator.SetBool("trasition", true);
+                isInvincible = false;
+                isCollide = false;
+                animator.SetBool("isCollide", false);
+                slideCollider.enabled = true;
+            }
             isSlide = true;
             animator.SetBool("isSlide", true);
 
@@ -442,13 +299,15 @@ public class PlayerAnimation : MonoBehaviour
             isSlide = false;
             animator.SetBool("isSlide", false);
 
-           playerCollider.enabled = true; // 슬라이딩 종료 시 콜라이더 활성화
-
+            playerCollider.enabled = true; // 슬라이딩 종료 시 콜라이더 활성화
+            if(trasition)
+            {
+                trasition = false;
+                animator.SetBool("trasition", false);
+                sprite.color = originalColor; //투명도 원래대로 복구
+                reSpeed();
+            }
             Debug.Log("Back to Run!");
         }
     }
-
 }
-
-
-

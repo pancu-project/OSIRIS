@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class totalColliding : MonoBehaviour
 {
-    public PlayerAnimation playerAnimation;
+    private PlayerAnimation playerAnimation;
     public string colliderRole;
-
 
     void Start()
     {
@@ -19,15 +18,6 @@ public class totalColliding : MonoBehaviour
         if (playerAnimation != null)
         {
             playerAnimation.HandleTriggerCollision(colliderRole, other);
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D collision) // 벽 충돌 감지
-    {
-        Collider2D collider = collision.collider;
-
-        if (playerAnimation != null)
-        {
-            playerAnimation.HandleCollision(colliderRole, collider);
         }
     }
 }
