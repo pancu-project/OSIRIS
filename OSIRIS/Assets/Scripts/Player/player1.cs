@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -49,7 +50,7 @@ public class player1 : MonoBehaviour
         Deadcnt = playerAnimation.Deadcnt;
         ShowImage(Deadcnt);
         
-        if (transform.position.x >= 295f && Deadcnt == 0) // 1번째 시체조각 회수 못할 시 리셋
+        /*if (transform.position.x >= 295f && Deadcnt == 0) // 1번째 시체조각 회수 못할 시 리셋
         {
             resetPosition1 = new Vector3(287f, -1.79f, transform.position.z);
             transform.position = resetPosition1;
@@ -63,12 +64,21 @@ public class player1 : MonoBehaviour
             transform.position = resetPosition2;
             
             Debug.Log("시체 조각 2 회수 못함!!");
-        }
+        }*/
 
         if (transform.position.x >= 591f)
         {
             gameOverPanel.SetActive(true);
             Time.timeScale = 0f;
+
+            PauseButton pause = GameObject.Find("Pause").GetComponent<PauseButton>();
+            pause.isEndingSceneAppear = true;
+
+            if (int.Parse(Regex.Replace(GameManager.Instance.stage, @"[^0-9]", "")) >= DataManager.Instance.currentData.stageLevel)
+            {
+                DataManager.Instance.currentData.stageLevel++;
+                DataManager.Instance.SaveData();
+            }
         }
     }
 

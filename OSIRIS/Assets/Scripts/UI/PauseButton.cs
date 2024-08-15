@@ -13,6 +13,8 @@ public class PauseButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     private Image buttonImage;
     private bool isTimeFlow = true;
 
+    public bool isEndingSceneAppear;
+
     private void Start()
     {
         buttonImage = GetComponent<Image>();
@@ -47,7 +49,7 @@ public class PauseButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !isEndingSceneAppear)
         {
             if (isTimeFlow)
             {

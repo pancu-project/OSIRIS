@@ -24,7 +24,9 @@ public class PlayerAnimation : MonoBehaviour
     //점프 모션
     private bool isJump = false;
     public int JumpCount = 0;
-    [SerializeField] float jumpForce = 15f;
+    [Header("Jump")]
+    [SerializeField] float jumpForce = 17f;
+    [SerializeField] float doubleJumpForce = 15f;
     [SerializeField] float gravityScaleDuringJump = 5f; // 점프 중 중력 스케일
 
     //슬라이드 모션
@@ -36,6 +38,7 @@ public class PlayerAnimation : MonoBehaviour
     //스킬 모션 - 매로 변신
     private bool isFly = false;
     private Coroutine transformationCoroutine;
+    [Header("Fly")]
     [SerializeField] public float FlyDuration = 3f;
     [SerializeField] private float FlyYPosition = -0.75f; // 변신 시 y 위치
 
@@ -45,6 +48,7 @@ public class PlayerAnimation : MonoBehaviour
 
     // 충돌 후 무적 상태
     private bool isInvincible = false;
+    [Header("Invincible")]
     [SerializeField] private float invincibleDuration = 2f; // 무적 상태 유지 시간
 
     //die 모션
@@ -83,6 +87,8 @@ public class PlayerAnimation : MonoBehaviour
 
         // 정상으로 원상복귀
         Time.timeScale = 1f;
+
+        playerRigidbody.gravityScale = gravityScaleDuringJump;
     }
     
     //충돌 감지 - 포션 감지 / 장애물 감지 (항아리,고양이,기둥) / 시체 조각 감지
@@ -181,6 +187,7 @@ public class PlayerAnimation : MonoBehaviour
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("die"))
         {
             gameOverPanel.SetActive(true);
+            pause.isEndingSceneAppear = true;
             Time.timeScale = 0f;
         }
 
@@ -256,14 +263,20 @@ public class PlayerAnimation : MonoBehaviour
         //점프
         if (Input.GetKeyDown(KeyCode.Space) && JumpCount < 2 && isSlide == false)
         {
-            JumpCount++;
-
             isJump = true;
             animator.SetBool("isJump", true); // 점프 상태 설정
-            playerRigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-            Debug.Log("Jump!");
 
-            playerRigidbody.gravityScale = gravityScaleDuringJump;
+            if (JumpCount == 0)
+            {
+                playerRigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            }
+            else if (JumpCount == 1)
+            {
+                playerRigidbody.AddForce(new Vector2(0, doubleJumpForce), ForceMode2D.Impulse);
+            }
+
+            JumpCount++;
+            Debug.Log("Jump!");
 
             if (JumpCount == 2 && isJump)
             {

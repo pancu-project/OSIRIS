@@ -106,7 +106,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1586758559
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 959037fc061de9d4a81a815c84842b93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -178,8 +178,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16321945, y: -0.16133738}
-  m_Size: {x: 4.417366, y: 6.566367}
+  m_Offset: {x: 0.02028656, y: -0.44365215}
+  m_Size: {x: 4.050354, y: 6.0017376}
   m_Direction: 0
 --- !u!1 &8827135507513902989
 GameObject:
@@ -254,7 +254,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1586758559
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 959037fc061de9d4a81a815c84842b93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -326,6 +326,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.054405212, y: -0.17681599}
-  m_Size: {x: 4.526184, y: 6.4810047}
+  m_Offset: {x: -0.26613998, y: -0.44501543}
+  m_Size: {x: 4.1027145, y: 5.944606}
   m_Direction: 0

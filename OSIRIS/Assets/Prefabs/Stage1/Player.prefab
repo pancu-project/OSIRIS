@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  heart: 0
 --- !u!114 &7816726933225426226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,11 +172,13 @@ MonoBehaviour:
   Deadcnt: 0
   LifeManager: {fileID: 0}
   JumpCount: 0
-  jumpForce: 13
+  jumpForce: 17
+  doubleJumpForce: 13
   gravityScaleDuringJump: 5
   FlyDuration: 5
   FlyYPosition: -0.75
   invincibleDuration: 2
+  isDie: 0
   playerCollider: {fileID: 0}
   slideCollider: {fileID: 0}
   foot: {fileID: 0}
