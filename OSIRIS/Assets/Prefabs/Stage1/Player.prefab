@@ -168,12 +168,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a18cad8b32ac0044ba4298000c4e69e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Platform:
+    serializedVersion: 2
+    m_Bits: 0
   gameOverPanel: {fileID: 0}
   Deadcnt: 0
   LifeManager: {fileID: 0}
   JumpCount: 0
   jumpForce: 17
-  doubleJumpForce: 13
+  doubleJumpForce: 12
   gravityScaleDuringJump: 5
   FlyDuration: 5
   FlyYPosition: -0.75
@@ -375,9 +378,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -9.543074}
+  m_Offset: {x: 0, y: -11.684468}
   serializedVersion: 2
-  m_Radius: 5.5037217
+  m_Radius: 5.8816137
 --- !u!114 &263887161283765781
 MonoBehaviour:
   m_ObjectHideFlags: 0

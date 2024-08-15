@@ -31,6 +31,8 @@ public class player1 : MonoBehaviour
         DeadPartFull1 = GameObject.Find("Dead1").GetComponent<DeadPartFull>();
         DeadPartFull2 = GameObject.Find("Dead2").GetComponent<DeadPartFull>();
 
+        resetPosition1 = new Vector3(238f, -2.8f, transform.position.z);
+        resetPosition2 = new Vector3(371f, -2.8f, transform.position.z);
     }
 
     public void ShowImage(int DeadCnt)
@@ -52,17 +54,13 @@ public class player1 : MonoBehaviour
         
         /*if (transform.position.x >= 295f && Deadcnt == 0) // 1번째 시체조각 회수 못할 시 리셋
         {
-            resetPosition1 = new Vector3(287f, -1.79f, transform.position.z);
             transform.position = resetPosition1;
-            //playerMoving.heart = true;
             Debug.Log("시체 조각 1 회수 못함!!");
         }
 
         if (transform.position.x >= 545f && transform.position.y <= -2f && Deadcnt == 1) // 2번째 시체조각 회수 못할 시 리셋
         {
-            resetPosition2 = new Vector3(532.51f, 1.19f, transform.position.z);
-            transform.position = resetPosition2;
-            
+            transform.position = resetPosition2;           
             Debug.Log("시체 조각 2 회수 못함!!");
         }*/
 
@@ -93,7 +91,7 @@ public class player1 : MonoBehaviour
                  playerMoving.moveSpeed = 0;
                  playerAnimation.minusHeart();
 
-                 transform.position = new Vector3(323.3f, -2.71f, transform.position.z);
+                 transform.position = new Vector3(315f, -1.8f, transform.position.z);
                  playerAnimation.reSpeed();
              }
              else if (collision.gameObject.CompareTag("repo2"))
@@ -102,7 +100,7 @@ public class player1 : MonoBehaviour
                  playerMoving.moveSpeed = 0;
                  playerAnimation.minusHeart();
 
-                 transform.position = new Vector3(335.35f, -1.74f, transform.position.z);
+                 transform.position = resetPosition2;
                  playerAnimation.reSpeed();
              }
              else if (collision.gameObject.CompareTag("repo3"))
@@ -111,87 +109,14 @@ public class player1 : MonoBehaviour
                  playerMoving.moveSpeed = 0;
                  playerAnimation.minusHeart();
 
-                 transform.position = new Vector3(370.8f, -2.76f, transform.position.z);
+                 transform.position = new Vector3(551f, -2.8f, transform.position.z);
                  playerAnimation.reSpeed();
              }
-             else if (collision.gameObject.CompareTag("repo4"))
-             {
-                 Debug.Log("추락!!");
-                 playerMoving.moveSpeed = 0;
-                 playerAnimation.minusHeart();
-
-                 transform.position = new Vector3(386.53f, 0.33f, transform.position.z);
-                 playerAnimation.reSpeed();
-             }
-             else if (collision.gameObject.CompareTag("repo5"))
-             {
-                 Debug.Log("추락!!");
-                 playerMoving.moveSpeed = 0;
-                 playerAnimation.minusHeart();
-
-                 transform.position = new Vector3(398.27f, -2.73f, transform.position.z);
-                 playerAnimation.reSpeed();
-             }
-             else if (collision.gameObject.CompareTag("repo6"))
-             {
-                 Debug.Log("추락!!");
-                 playerMoving.moveSpeed = 0;
-                 playerAnimation.minusHeart();
-
-                 transform.position = new Vector3(461.33f, 1.36f, transform.position.z);
-                 playerAnimation.reSpeed();
-             }
-             else if (collision.gameObject.CompareTag("repo7"))
-             {
-                 Debug.Log("추락!!");
-                 playerMoving.moveSpeed = 0;
-                 playerAnimation.minusHeart();
-
-                 transform.position = new Vector3(478.48f, -2.78f, transform.position.z);
-                 playerAnimation.reSpeed();
-             }
-             else if (collision.gameObject.CompareTag("repo8"))
-             {
-                 Debug.Log("추락!!");
-                 playerMoving.moveSpeed = 0;
-                 playerAnimation.minusHeart();
-
-                 transform.position = new Vector3(510.2f, -0.78f, transform.position.z);
-                 playerAnimation.reSpeed();
-             }
-             else if (collision.gameObject.CompareTag("repo9"))
-             {
-                 Debug.Log("추락!!");
-                 playerMoving.moveSpeed = 0;
-                 playerAnimation.minusHeart();
-
-                 transform.position = new Vector3(514.37f, 1.24f, transform.position.z);
-                 playerAnimation.reSpeed();
-             }
-             else if (collision.gameObject.CompareTag("repo10"))
-             {
-                 Debug.Log("추락!!");
-                 playerMoving.moveSpeed = 0;
-                 playerAnimation.minusHeart();
-
-                 transform.position = new Vector3(522.18f, 2.23f, transform.position.z);
-                 playerAnimation.reSpeed();
-             }
-             else if (collision.gameObject.CompareTag("repo11"))
-             {
-                 Debug.Log("추락!!");
-                 playerMoving.moveSpeed = 0;
-                 playerAnimation.minusHeart();
-
-                 transform.position = new Vector3(549.47f, -2.71f, transform.position.z);
-                 playerAnimation.reSpeed();
-             }
-
+             
              if (playerAnimation.LifeManager == null)
              {
                 playerAnimation.GameOver();
              }
          }
-
     }
 }
