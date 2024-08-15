@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &22119730 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8602933894003884791, guid: 873152614cf463c4795089b590003fc6, type: 3}
-  m_PrefabInstance: {fileID: 1029608775}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e97d7adb36f1bcd4ba991ab307ba8c09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &65519159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -701,6 +690,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3028162924083371552, guid: 873152614cf463c4795089b590003fc6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6519357728576790177, guid: 873152614cf463c4795089b590003fc6, type: 3}
       propertyPath: m_Name
       value: UICanvas
@@ -858,39 +851,64 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2995076255261671322, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+      propertyPath: m_Size.x
+      value: 13.718668
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995076255261671322, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+      propertyPath: m_Size.y
+      value: 5.7512245
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995076255261671322, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+      propertyPath: m_Offset.x
+      value: -2.152313
+      objectReference: {fileID: 0}
+    - target: {fileID: 2995076255261671322, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+      propertyPath: m_Offset.y
+      value: -16.957392
+      objectReference: {fileID: 0}
     - target: {fileID: 6223607037845000589, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 1874567503}
-    - target: {fileID: 7816726933225426226, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
-      propertyPath: isDie
-      value: 0
+    - target: {fileID: 7579945292967454900, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+      propertyPath: m_Radius
+      value: 5.605947
       objectReference: {fileID: 0}
-    - target: {fileID: 7816726933225426226, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
-      propertyPath: jumpForce
-      value: 17
+    - target: {fileID: 7579945292967454900, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579945292967454900, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+      propertyPath: m_Offset.x
+      value: 5.4630055
+      objectReference: {fileID: 0}
+    - target: {fileID: 7579945292967454900, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+      propertyPath: m_Offset.y
+      value: -13.830843
       objectReference: {fileID: 0}
     - target: {fileID: 7816726933225426226, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 665772743}
     - target: {fileID: 7816726933225426226, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
-      propertyPath: doubleJumpForce
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 9107971976701714663, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
-      propertyPath: m_Radius
-      value: 5.8816137
-      objectReference: {fileID: 0}
-    - target: {fileID: 9107971976701714663, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
-      propertyPath: m_Offset.y
-      value: -11.684468
+      propertyPath: skillProgressBar
+      value: 
+      objectReference: {fileID: 1256242266}
+    - target: {fileID: 8749429141364453601, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+      propertyPath: moveSpeed
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+--- !u!1 &1256242266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3028162924083371552, guid: 873152614cf463c4795089b590003fc6, type: 3}
+  m_PrefabInstance: {fileID: 1029608775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1534816263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -961,10 +979,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2139227300544668638, guid: 6040eee856c3fc84aa498c8fe6376156, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 22119730}
     - target: {fileID: 6541116205370769185, guid: 6040eee856c3fc84aa498c8fe6376156, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1045,10 +1059,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6572557778545126783, guid: 6040eee856c3fc84aa498c8fe6376156, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 22119730}
     - target: {fileID: 7170698585402538346, guid: 6040eee856c3fc84aa498c8fe6376156, type: 3}
       propertyPath: m_Name
       value: GameOver

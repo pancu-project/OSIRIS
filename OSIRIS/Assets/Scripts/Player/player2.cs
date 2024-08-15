@@ -61,12 +61,12 @@ public class player2 : MonoBehaviour
         }
         else if (DeadPartFull3 != null && DeadCnt == 2)
         {
-            Debug.Log("**두번째 팔조각"+DeadCnt);
+            Debug.Log("**두번째 팔조각" + DeadCnt);
             DeadPartFull3.ShowDeadImage();
             if (!isHeartAdded)
             {
                 lifeManager.TestAddButton();
-                isHeartAdded = true; 
+                isHeartAdded = true;
             }
         }
         else if (DeadPartFull4 != null && DeadCnt == 3)

@@ -38,7 +38,7 @@ public class PlayerAnimation : MonoBehaviour
     private SkillProgressBar skillProgressBar; 
 
     //스킬 모션 - 매로 변신
-    private bool isFly = false;
+    public bool isFly = false;
     private Coroutine transformationCoroutine;
     [Header("Fly")]
     [SerializeField] public float FlyDuration = 3f;
@@ -47,6 +47,7 @@ public class PlayerAnimation : MonoBehaviour
     //충돌 모션
     private bool isCollide = false;
     private bool trasition = false;
+    private bool trasition2 = false;
 
     // 충돌 후 무적 상태
     private bool isInvincible = false;
@@ -73,6 +74,7 @@ public class PlayerAnimation : MonoBehaviour
         //콜라이더 컴포넌트 
         playerCollider = transform.Find("totalColliding").GetComponent<Collider2D>(); 
         slideCollider = transform.Find("sliding").GetComponent<Collider2D>();
+        slideCollider.enabled = false;
         foot = GetComponent<BoxCollider2D>();
 
         slideCollider.enabled = false;
@@ -87,7 +89,7 @@ public class PlayerAnimation : MonoBehaviour
 
         //스킬 UI 진행바 컴포넌트
         skillProgressBar = GameObject.Find("Skill Progress Gauge").GetComponent<SkillProgressBar>(); 
-        skillProgressBar.falseActive(); // 비활성화
+        //skillProgressBar.falseActive(); // 비활성화
 
         // 정상으로 원상복귀
         Time.timeScale = 1f;
@@ -169,7 +171,7 @@ public class PlayerAnimation : MonoBehaviour
     private IEnumerator InvincibleRoutine() // 충돌 시간
     {
         yield return new WaitForSeconds(invincibleDuration);
-        if (!trasition)
+        if (!trasition && !trasition2)
         {
             EndInvincibleState();
         }
@@ -183,7 +185,6 @@ public class PlayerAnimation : MonoBehaviour
        
         reSpeed();
         playerCollider.enabled = true; // 무적상태 해제
-        slideCollider.enabled = true;
         sprite.color = originalColor; //투명도 원래대로 복구
     }
 
@@ -239,24 +240,31 @@ public class PlayerAnimation : MonoBehaviour
         animator.SetTrigger("BackRun");
 
         playerCollider.enabled = true; // 스킬 종료 후 콜라이더 활성화
-        slideCollider.enabled = true; //  스킬 종료 후 콜라이더 활성화
+      
     }
 
     // 충돌 관리 - 점프카운트 리셋 / 추락 시 하트 소진
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.otherCollider == foot && collision.gameObject.CompareTag("bottom") && !isDie)
-        {
+        {           
             isJump = false;
             animator.SetBool("isJump", false);
             JumpCount = 0;
+
+            if (trasition2)
+            {
+                trasition2 = false;
+                animator.SetBool("trasition2", false);
+                isInvincible = false;
+                sprite.color = originalColor; //투명도 원래대로 복구
+                reSpeed();
+                playerCollider.enabled = true;
+
+            }
+
             Debug.Log("Bottom!");
         }
-        //if (collision.otherCollider == slideCollider && collision.gameObject.CompareTag("bottom") && !isDie) // 장애물 
-        //{
-        //    StartInvincibleState();
-        //    minusHeart();
-        //}
     }
 
     private void Update()
@@ -268,11 +276,11 @@ public class PlayerAnimation : MonoBehaviour
         Vector3 raycastPosition = new Vector3(transform.position.x,transform.position.y+0.3f,transform.position.z);
         Vector3 raycastPosition2 = new Vector3(transform.position.x, transform.position.y - 0.7f, transform.position.z);
 
-        Debug.DrawRay(raycastPosition , Vector2.right * 1f, Color.red);
-        Debug.DrawRay(raycastPosition2, Vector2.right * 1f, Color.blue);
-        RaycastHit2D hit = Physics2D.Raycast(raycastPosition, Vector2.right, 1f, LayerMask.GetMask("Platform"));
+        Debug.DrawRay(raycastPosition , Vector2.right * 0.8f, Color.red);
+        Debug.DrawRay(raycastPosition2, Vector2.right * 0.8f, Color.blue);
+        RaycastHit2D hit = Physics2D.Raycast(raycastPosition, Vector2.right,0.8f,LayerMask.GetMask("Platform"));
         {
-            if(hit.collider!=null && !isCollide && !isSlide)
+            if(hit.collider!=null && !isInvincible && !isSlide && !isFly)
             {
                 Debug.Log("레이캐스트 감지"+hit.collider.name);
                 StartInvincibleState();
@@ -280,9 +288,9 @@ public class PlayerAnimation : MonoBehaviour
             }
         }
 
-        RaycastHit2D hit2 = Physics2D.Raycast(raycastPosition2, Vector2.right, 1f, LayerMask.GetMask("Platform"));
+        RaycastHit2D hit2 = Physics2D.Raycast(raycastPosition2, Vector2.right, 0.8f, LayerMask.GetMask("Platform"));
         {
-            if (hit2.collider != null && isCollide )
+            if (hit2.collider != null && !isInvincible && !isFly)
             {
                 Debug.Log("레이캐스트 감지" + hit2.collider.name);
                 StartInvincibleState();
@@ -294,6 +302,15 @@ public class PlayerAnimation : MonoBehaviour
         //점프
         if (Input.GetKeyDown(KeyCode.Space) && JumpCount < 2 && isSlide == false)
         {
+            if (isCollide)
+            {
+                trasition2 = true;
+                animator.SetBool("trasition2", true);
+                //isInvincible = false;
+                isCollide = false;
+                animator.SetBool("isCollide", false);               
+            }
+
             isJump = true;
             animator.SetBool("isJump", true); // 점프 상태 설정
 
@@ -318,8 +335,9 @@ public class PlayerAnimation : MonoBehaviour
         }
 
         //슬라이딩
-        if (Input.GetKey(KeyCode.S) && isJump == false)
+        if (Input.GetKey(KeyCode.S) && isJump == false && !isFly)
         {
+            playerCollider.enabled = false;
             StartSlide();
         }
         else if (isSlide)
@@ -332,21 +350,29 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (!isSlide)
         {
-            if(isCollide)
+            playerCollider.enabled = false; // 슬라이딩 시작 시 콜라이더 비활성화
+
+            if (isCollide)
             {
                 trasition = true;
                 animator.SetBool("trasition", true);
-                isInvincible = false;
+                //isInvincible = false;
                 isCollide = false;
                 animator.SetBool("isCollide", false);
-                slideCollider.enabled = true;
+
+                isSlide = true;
+                animator.SetBool("isSlide", true);               
+               
+                playerCollider.enabled = false; // 슬라이딩 시작 시 콜라이더 비활성화
             }
+            else
+            {
+                isSlide = true;
+                animator.SetBool("isSlide", true);
 
-            isSlide = true;
-            animator.SetBool("isSlide", true);
-
-            slideCollider.enabled = true;
-            playerCollider.enabled = false; // 슬라이딩 시작 시 콜라이더 비활성화
+                slideCollider.enabled = true;
+                playerCollider.enabled = false; // 슬라이딩 시작 시 콜라이더 비활성화
+            }
 
             Debug.Log("Slide!");
         }
@@ -356,17 +382,21 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (isSlide)
         {
-            isSlide = false;
-            animator.SetBool("isSlide", false);
-            slideCollider.enabled = false;
-            playerCollider.enabled = true; // 슬라이딩 종료 시 콜라이더 활성화
-            if(trasition)
+            if (trasition)
             {
                 trasition = false;
+                isInvincible = false;
                 animator.SetBool("trasition", false);
                 sprite.color = originalColor; //투명도 원래대로 복구
                 reSpeed();
             }
+
+            isSlide = false;
+            animator.SetBool("isSlide", false);
+            slideCollider.enabled = false;
+            playerCollider.enabled = true; // 슬라이딩 종료 시 콜라이더 활성화
+
+            
             Debug.Log("Back to Run!");
         }
     }

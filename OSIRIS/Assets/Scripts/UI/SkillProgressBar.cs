@@ -30,11 +30,8 @@ public class SkillProgressBar : MonoBehaviour
 
     public void StartProgressBar(float duration)
     {
-        Debug.Log(skillSlider.maxValue);
         skillSlider.maxValue = duration;
-        Debug.Log(skillSlider.maxValue);
         skillSlider.value = duration;
-        Debug.Log(skillSlider.value);
         skillSlider.gameObject.SetActive(true);
         StartCoroutine(UpdateProgressBar(duration));
     }
