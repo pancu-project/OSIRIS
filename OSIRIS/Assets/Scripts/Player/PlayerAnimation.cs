@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class PlayerAnimation : MonoBehaviour
 {
     PauseButton pause;
-    
+
+    public LayerMask Platform;
+
     //플레이어 속도 조절
     private PlayerMoving playerMoving;
     private SpriteRenderer sprite;
@@ -72,6 +74,8 @@ public class PlayerAnimation : MonoBehaviour
         playerCollider = transform.Find("totalColliding").GetComponent<Collider2D>(); 
         slideCollider = transform.Find("sliding").GetComponent<Collider2D>();
         foot = GetComponent<BoxCollider2D>();
+
+        slideCollider.enabled = false;
 
         //하트(목숨) 컴포넌트
         LifeManager = GameObject.Find("Life").GetComponent<LifeManager>();
@@ -156,6 +160,8 @@ public class PlayerAnimation : MonoBehaviour
             sprite.color = new Color(1, 1, 1, 0.4f); //충돌 시 투명하게 바꾸기
             playerCollider.enabled = false; // 무적상태
             slideCollider.enabled = false;
+
+
             StartCoroutine(InvincibleRoutine());
         }
     }
@@ -242,23 +248,48 @@ public class PlayerAnimation : MonoBehaviour
         if (collision.otherCollider == foot && collision.gameObject.CompareTag("bottom") && !isDie)
         {
             isJump = false;
-            JumpCount = 0;
             animator.SetBool("isJump", false);
-            animator.ResetTrigger("isDoubleJump");
+            JumpCount = 0;
             Debug.Log("Bottom!");
         }
-
-        if (collision.otherCollider == slideCollider && collision.gameObject.CompareTag("bottom") && !isDie) // 장애물 
-        {
-            StartInvincibleState();
-            minusHeart();
-        }
+        //if (collision.otherCollider == slideCollider && collision.gameObject.CompareTag("bottom") && !isDie) // 장애물 
+        //{
+        //    StartInvincibleState();
+        //    minusHeart();
+        //}
     }
 
     private void Update()
     {
         if (!pause.IsTimeFlow()) { return; }
         if (isDie) { return; }
+
+        //raycast
+        Vector3 raycastPosition = new Vector3(transform.position.x,transform.position.y+0.3f,transform.position.z);
+        Vector3 raycastPosition2 = new Vector3(transform.position.x, transform.position.y - 0.7f, transform.position.z);
+
+        Debug.DrawRay(raycastPosition , Vector2.right * 1f, Color.red);
+        Debug.DrawRay(raycastPosition2, Vector2.right * 1f, Color.blue);
+        RaycastHit2D hit = Physics2D.Raycast(raycastPosition, Vector2.right, 1f, LayerMask.GetMask("Platform"));
+        {
+            if(hit.collider!=null && !isCollide && !isSlide)
+            {
+                Debug.Log("레이캐스트 감지"+hit.collider.name);
+                StartInvincibleState();
+                minusHeart();
+            }
+        }
+
+        RaycastHit2D hit2 = Physics2D.Raycast(raycastPosition2, Vector2.right, 1f, LayerMask.GetMask("Platform"));
+        {
+            if (hit2.collider != null && isCollide )
+            {
+                Debug.Log("레이캐스트 감지" + hit2.collider.name);
+                StartInvincibleState();
+                minusHeart();
+            }
+        }
+
 
         //점프
         if (Input.GetKeyDown(KeyCode.Space) && JumpCount < 2 && isSlide == false)
@@ -310,9 +341,11 @@ public class PlayerAnimation : MonoBehaviour
                 animator.SetBool("isCollide", false);
                 slideCollider.enabled = true;
             }
+
             isSlide = true;
             animator.SetBool("isSlide", true);
 
+            slideCollider.enabled = true;
             playerCollider.enabled = false; // 슬라이딩 시작 시 콜라이더 비활성화
 
             Debug.Log("Slide!");
@@ -325,7 +358,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             isSlide = false;
             animator.SetBool("isSlide", false);
-
+            slideCollider.enabled = false;
             playerCollider.enabled = true; // 슬라이딩 종료 시 콜라이더 활성화
             if(trasition)
             {

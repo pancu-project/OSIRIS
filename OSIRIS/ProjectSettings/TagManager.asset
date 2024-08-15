@@ -21,22 +21,6 @@ TagManager:
   - potion
   - repo12
   - repo13
-  - repo14
-  - repo15
-  - repo16
-  - repo17
-  - repo18
-  - repo19
-  - repo20
-  - repo21
-  - repo22
-  - repo23
-  - repo24
-  - repo25
-  - repo26
-  - repo27
-  - repo28
-  - repo29
   layers:
   - Default
   - TransparentFX
@@ -44,8 +28,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Platform
+  - Player
   - 
   - 
   - 

@@ -34,8 +34,7 @@ public class PlayerMoving : MonoBehaviour
     {
         Vector3 playerViewportPosition = mainCamera.WorldToViewportPoint(transform.position);
 
-        if (playerViewportPosition.x < 0.2 || playerViewportPosition.x > 1 ||
-            playerViewportPosition.y < 0 || playerViewportPosition.y > 1)
+        if (playerViewportPosition.x < 0.2 || playerViewportPosition.x > 1)
         {
             //Debug.Log("Player is out of camera view!");
             //if (!heart)
