@@ -349,6 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  heart: 0
 --- !u!114 &3899948448692919648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,14 +362,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a18cad8b32ac0044ba4298000c4e69e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Platform:
+    serializedVersion: 2
+    m_Bits: 0
+  gameOverPanel: {fileID: 0}
   Deadcnt: 0
   LifeManager: {fileID: 0}
   JumpCount: 0
-  jumpForce: 13
+  jumpForce: 17
+  doubleJumpForce: 12
   gravityScaleDuringJump: 5
   FlyDuration: 5
   FlyYPosition: -0.75
   invincibleDuration: 1
+  isDie: 0
   playerCollider: {fileID: 0}
   slideCollider: {fileID: 0}
   foot: {fileID: 0}
@@ -499,3 +506,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 263419c2adf8eb846990e6a2c45eb06b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 0}
