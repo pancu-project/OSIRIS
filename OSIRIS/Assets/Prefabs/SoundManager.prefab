@@ -177,7 +177,7 @@ MonoBehaviour:
   sfx_audioClips:
   - {fileID: 8300000, guid: 77a9591247718e544876c2306c226cf5, type: 3}
   - {fileID: 8300000, guid: f2a3f76805946f247975a525cde8fa5f, type: 3}
-  - {fileID: 8300000, guid: 0d23dbee11f653a47a80687b26f81476, type: 3}
+  - {fileID: 8300000, guid: 06b5c5b30b946e744aafd483828d6caf, type: 3}
   - {fileID: 8300000, guid: 2246e4a1de82fdf4ca37ce6caa2c0ad0, type: 3}
   - {fileID: 8300000, guid: e80250bb5a6a76446850eabd79e9acd2, type: 3}
   - {fileID: 8300000, guid: 0a9280c0d6b7ae04ab74724d933c984c, type: 3}
