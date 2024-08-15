@@ -3274,6 +3274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5877798974256183627}
   - component: {fileID: 6618056940083421369}
+  - component: {fileID: 5448481286195718169}
   m_Layer: 5
   m_Name: Sound Slider
   m_TagString: Untagged
@@ -3353,6 +3354,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5448481286195718169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5538517145744682159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bebfd6123edf994e951d38445309b0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muteImage: {fileID: 4777680884415787287}
 --- !u!1 &5596519300742496840
 GameObject:
   m_ObjectHideFlags: 0

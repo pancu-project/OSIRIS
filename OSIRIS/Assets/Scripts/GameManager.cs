@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,5 +28,11 @@ public class GameManager : MonoBehaviour
     {
         stage = "stage1";
         DataManager.Instance.LoadData();
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        SoundManager.Instance.PlayBGMSound(SceneManager.GetActiveScene().name);
     }
 }

@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 6365237308529717036}
   - component: {fileID: 2166348944726676315}
   - component: {fileID: 6572557778545126783}
-  - component: {fileID: 5689299193352641}
+  - component: {fileID: 1302560745373943619}
   m_Layer: 0
   m_Name: close
   m_TagString: Untagged
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5689299193352641}
+      - m_Target: {fileID: 1302560745373943619}
         m_TargetAssemblyTypeName: gameOver, Assembly-CSharp
         m_MethodName: CloseButtonClicked
         m_Mode: 1
@@ -209,7 +209,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5689299193352641
+--- !u!114 &1302560745373943619
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -208,7 +208,9 @@ public class PlayerAnimation : MonoBehaviour
     }
 
     private void StartTransformation() //변신 시작
-    {   
+    {
+        SoundManager.Instance.PlaySFXSound("Skill");
+
         isFly = true;
         animator.SetBool("Flying", true);
         animator.SetTrigger("isFly");
@@ -302,6 +304,8 @@ public class PlayerAnimation : MonoBehaviour
         //점프
         if (Input.GetKeyDown(KeyCode.Space) && JumpCount < 2 && isSlide == false)
         {
+            SoundManager.Instance.PlaySFXSound("Jump");
+
             if (isCollide)
             {
                 trasition2 = true;
@@ -374,6 +378,7 @@ public class PlayerAnimation : MonoBehaviour
                 playerCollider.enabled = false; // 슬라이딩 시작 시 콜라이더 비활성화
             }
 
+            SoundManager.Instance.PlaySFXSound("Slide");
             Debug.Log("Slide!");
         }
     }
