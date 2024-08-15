@@ -20,6 +20,8 @@ public class TitleSceneGauge : MonoBehaviour
         slider = GetComponent<Slider>();
         openingAnimation = openingPanel.GetComponent<VideoPlayer>();
         openingAnimation.prepareCompleted += OnVideoPrepared;
+
+        SoundManager.Instance.PlaySFXSound("Illust");
     }
 
     private void Update()
@@ -33,6 +35,7 @@ public class TitleSceneGauge : MonoBehaviour
 
         if (isAnimationPlaying && (!openingAnimation.isPlaying || Input.anyKeyDown))
         {
+            SoundManager.Instance.StopSFXSound();
             SceneManager.LoadScene("StartScene");
         }
     }

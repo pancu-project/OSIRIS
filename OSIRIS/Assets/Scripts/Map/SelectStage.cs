@@ -42,6 +42,7 @@ public class SelectStage : MonoBehaviour
 
         blurBackground.SetActive(true);
         sprite.enabled = true;
+        SoundManager.Instance.PlaySFXSound("UI");
     }
 
     private void OnMouseExit()

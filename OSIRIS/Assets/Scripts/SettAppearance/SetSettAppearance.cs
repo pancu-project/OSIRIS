@@ -25,8 +25,11 @@ public class SetSettAppearance : MonoBehaviour
         if (appearSpot.Count <= index) return;
 
         float playerSpotGap = appearSpot[index].transform.position.x - player.transform.position.x;
+
         if ( 0 < playerSpotGap && playerSpotGap < gap && !settRenderer.enabled)
         {
+            SoundManager.Instance.PlaySFXSound("Sett");
+
             sett.GetComponent<SetObstacles>().idx = index;
             settRenderer.enabled = true;
             setObstacle.enabled = true;

@@ -24,6 +24,7 @@ public class ButtonSpriteActive : MonoBehaviour, IPointerEnterHandler, IPointerE
     public void OnPointerEnter(PointerEventData eventData)
     {
         SetActiveImage();
+        SoundManager.Instance.PlaySFXSound("UI");
     }
 
     public void OnPointerExit(PointerEventData eventData)
