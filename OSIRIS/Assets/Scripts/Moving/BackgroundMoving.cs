@@ -9,12 +9,28 @@ public class BackgroundMoving : MonoBehaviour
     Vector2 targetPos;
     Vector3 movePos;
 
+    public PlayerAnimation playerAnimation;
+
+    private void Start()
+    {
+        playerAnimation = GameObject.Find("Player").GetComponent<PlayerAnimation>();
+    }
+
     private void Update()
     {
         targetPos = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
         movePos = new Vector3(moveSpeed * Time.deltaTime, 0);
 
-        transform.Translate(movePos);
+        if (playerAnimation.isFly)
+        {
+            movePos = new Vector3(-15f * Time.deltaTime, 0);
+            transform.Translate(movePos);
+        }
+        else
+        {
+            movePos = new Vector3(moveSpeed * Time.deltaTime, 0);
+            transform.Translate(movePos);
+        }
 
         if (transform.position.x + length < targetPos.x)
         {

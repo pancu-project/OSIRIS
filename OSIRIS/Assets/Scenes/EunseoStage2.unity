@@ -290,6 +290,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stage2 Tilemap
       objectReference: {fileID: 0}
+    - target: {fileID: 813593940858737834, guid: e826782c0b3a17843802962dc999c9ea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3466224789586877437, guid: e826782c0b3a17843802962dc999c9ea, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6664960220059318100, guid: e826782c0b3a17843802962dc999c9ea, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -674,11 +682,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 368488930155272326, guid: 6dde3d5e51dbc9c4d95e2739ea8cad93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 638
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 368488930155272326, guid: 6dde3d5e51dbc9c4d95e2739ea8cad93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8
+      value: -2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 858115537404869064, guid: 6dde3d5e51dbc9c4d95e2739ea8cad93, type: 3}
+      propertyPath: m_Size.y
+      value: 6.7977
+      objectReference: {fileID: 0}
+    - target: {fileID: 858115537404869064, guid: 6dde3d5e51dbc9c4d95e2739ea8cad93, type: 3}
+      propertyPath: m_Offset.y
+      value: -16.434155
       objectReference: {fileID: 0}
     - target: {fileID: 2589974076076889865, guid: 6dde3d5e51dbc9c4d95e2739ea8cad93, type: 3}
       propertyPath: gameOverPanel

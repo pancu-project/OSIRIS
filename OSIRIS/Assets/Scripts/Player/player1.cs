@@ -51,8 +51,8 @@ public class player1 : MonoBehaviour
     {
         Deadcnt = playerAnimation.Deadcnt;
         ShowImage(Deadcnt);
-        
-        /*if (transform.position.x >= 295f && Deadcnt == 0) // 1번째 시체조각 회수 못할 시 리셋
+
+        if (transform.position.x >= 295f && Deadcnt == 0) // 1번째 시체조각 회수 못할 시 리셋
         {
             transform.position = resetPosition1;
             Debug.Log("시체 조각 1 회수 못함!!");
@@ -60,9 +60,9 @@ public class player1 : MonoBehaviour
 
         if (transform.position.x >= 545f && transform.position.y <= -2f && Deadcnt == 1) // 2번째 시체조각 회수 못할 시 리셋
         {
-            transform.position = resetPosition2;           
+            transform.position = resetPosition2;
             Debug.Log("시체 조각 2 회수 못함!!");
-        }*/
+        }
 
         if (transform.position.x >= 591f)
         {
