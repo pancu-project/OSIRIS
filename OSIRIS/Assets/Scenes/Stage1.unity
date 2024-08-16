@@ -493,6 +493,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6223607037845000589, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
+      propertyPath: endPos
+      value: 
+      objectReference: {fileID: 25397424422648490, guid: 5a54b4f4c5e344846bd9eed19bef0fbb, type: 3}
+    - target: {fileID: 6223607037845000589, guid: d5cb862e5ddfc104d9e61df5953392db, type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 541083874}
