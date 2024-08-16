@@ -29,6 +29,9 @@ public class player2 : MonoBehaviour
     private Vector3 resetPosition4;
     private Vector3 resetPosition5;
 
+    //클리어 위치
+    [SerializeField] Transform endPos;
+
     private void Start()
     {
         playerAnimation = GetComponent<PlayerAnimation>();
@@ -121,7 +124,7 @@ public class player2 : MonoBehaviour
             Debug.Log("시체 조각 5 회수 못함!!");
         }
 
-        if (transform.position.x >= 691f)
+        if (transform.position.x >= endPos.position.x)
         {
             gameOverPanel.SetActive(true);
             Time.timeScale = 0f;

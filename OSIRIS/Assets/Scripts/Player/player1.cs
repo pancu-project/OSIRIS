@@ -20,7 +20,8 @@ public class player1 : MonoBehaviour
     private Vector3 resetPosition1;
     private Vector3 resetPosition2;
 
-    //낭떨어지 리셋
+    //클리어 위치
+    [SerializeField] Transform endPos;
 
     private void Start()
     {
@@ -64,7 +65,7 @@ public class player1 : MonoBehaviour
             Debug.Log("시체 조각 2 회수 못함!!");
         }
 
-        if (transform.position.x >= 591f)
+        if (transform.position.x >= endPos.position.x)
         {
             gameOverPanel.SetActive(true);
             Time.timeScale = 0f;
