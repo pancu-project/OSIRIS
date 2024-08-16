@@ -312,8 +312,6 @@ public class PlayerAnimation : MonoBehaviour
         //점프
         if (Input.GetKeyDown(KeyCode.Space) && JumpCount < 2 && isSlide == false)
         {
-            SoundManager.Instance.PlaySFXSound("Jump");
-
             if (isCollide)
             {
                 trasition2 = true;
@@ -323,12 +321,15 @@ public class PlayerAnimation : MonoBehaviour
                 animator.SetBool("isCollide", false);               
             }
 
+            if (!isFly) SoundManager.Instance.PlaySFXSound("Jump");
+
             isJump = true;
             animator.SetBool("isJump", true); // 점프 상태 설정
 
             if (JumpCount == 0)
             {
                 playerRigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+
             }
             else if (JumpCount == 1)
             {
