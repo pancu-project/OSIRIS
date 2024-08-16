@@ -91,7 +91,7 @@ public class player1 : MonoBehaviour
                  playerMoving.moveSpeed = 0;
                  playerAnimation.minusHeart();
 
-                 transform.position = new Vector3(315f, -1.8f, transform.position.z);
+                 transform.position = new Vector3(314.5f, -1.8f, transform.position.z);
                  playerAnimation.reSpeed();
              }
              else if (collision.gameObject.CompareTag("repo2"))
