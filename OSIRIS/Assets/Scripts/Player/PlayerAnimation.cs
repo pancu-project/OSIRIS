@@ -104,9 +104,12 @@ public class PlayerAnimation : MonoBehaviour
         {
             if ((colliderRole == "sildeCollider" || colliderRole == "totalCollider") && other.CompareTag("potion") && !isFly) // 물약
             {
-                //skillProgressBar.trueActive();
-                StartTransformation();
                 Destroy(other.gameObject);
+                if (isSlide)
+                {
+                    EndSlide();
+                }
+                StartTransformation();
             }
 
             if ((colliderRole == "sildeCollider" || colliderRole == "totalCollider") && other.CompareTag("Obstacle") && !isDie) // 장애물 
@@ -156,13 +159,11 @@ public class PlayerAnimation : MonoBehaviour
         if (!isInvincible) // 장애물 충돌 시 충돌 애니 실행
         {
             isInvincible = true;
-            playerMoving.moveSpeed = 4;
             isCollide = true;
             animator.SetBool("isCollide", true);
             sprite.color = new Color(1, 1, 1, 0.4f); //충돌 시 투명하게 바꾸기
             playerCollider.enabled = false; // 무적상태
             slideCollider.enabled = false;
-
 
             StartCoroutine(InvincibleRoutine());
         }
@@ -175,6 +176,14 @@ public class PlayerAnimation : MonoBehaviour
         {
             EndInvincibleState();
         }
+        else if(trasition)
+        {
+            trasition = false;
+            isInvincible = false;
+            animator.SetBool("trasition", false);
+            sprite.color = originalColor; //투명도 원래대로 복구
+            slideCollider.enabled = true;
+        }
     }
 
     private void EndInvincibleState() //충돌 -> 달리기 모션 전환
@@ -183,7 +192,6 @@ public class PlayerAnimation : MonoBehaviour
         isCollide = false;
         animator.SetBool("isCollide", false);
        
-        reSpeed();
         playerCollider.enabled = true; // 무적상태 해제
         sprite.color = originalColor; //투명도 원래대로 복구
     }
@@ -387,14 +395,14 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (isSlide)
         {
-            if (trasition)
-            {
-                trasition = false;
-                isInvincible = false;
-                animator.SetBool("trasition", false);
-                sprite.color = originalColor; //투명도 원래대로 복구
-                reSpeed();
-            }
+            //if (trasition)
+            //{
+            //    trasition = false;
+            //    isInvincible = false;
+            //    animator.SetBool("trasition", false);
+            //    sprite.color = originalColor; //투명도 원래대로 복구
+            //    slideCollider.enabled = true;
+            //}
 
             isSlide = false;
             animator.SetBool("isSlide", false);

@@ -28,13 +28,14 @@ public class PlayerMoving : MonoBehaviour
 
         // 플레이어가 카메라 뷰를 벗어났는지 확인
         CheckIfPlayerOutOfCameraView();
+        mainCamera.transform.position += movePos;
     }
 
     private void CheckIfPlayerOutOfCameraView()
     {
         Vector3 playerViewportPosition = mainCamera.WorldToViewportPoint(transform.position);
 
-        if (playerViewportPosition.x < 0.2 || playerViewportPosition.x > 1)
+        if (playerViewportPosition.x < 0.4f)
         {
             //Debug.Log("Player is out of camera view!");
             //if (!heart)
@@ -43,7 +44,7 @@ public class PlayerMoving : MonoBehaviour
             //    heart = true;
             //}
 
-            Vector3 catchUpCameraPosition = new Vector3(transform.position.x + offsetX, mainCamera.transform.position.y, mainCamera.transform.position.z);
+            Vector3 catchUpCameraPosition = new Vector3(transform.position.x - offsetX*2, mainCamera.transform.position.y, mainCamera.transform.position.z);
             mainCamera.transform.position = Vector3.Lerp(mainCamera.transform.position, catchUpCameraPosition, moveSpeed * Time.deltaTime);
 
         }
@@ -54,8 +55,8 @@ public class PlayerMoving : MonoBehaviour
 
     }
 
-    private void LateUpdate()
-    {
-        mainCamera.transform.Translate(movePos);
-    }
+    //private void LateUpdate()
+    //{
+    //    mainCamera.transform.Translate(movePos);
+    //}
 }
