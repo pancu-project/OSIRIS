@@ -314,6 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 0}
+  endPos: {fileID: 25397424422648490, guid: 5a54b4f4c5e344846bd9eed19bef0fbb, type: 3}
 --- !u!1 &4660064026190729450
 GameObject:
   m_ObjectHideFlags: 0
