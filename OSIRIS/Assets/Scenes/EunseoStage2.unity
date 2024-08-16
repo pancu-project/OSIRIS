@@ -800,7 +800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 368488930155272326, guid: 6dde3d5e51dbc9c4d95e2739ea8cad93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.7
+      value: -2.8
       objectReference: {fileID: 0}
     - target: {fileID: 858115537404869064, guid: 6dde3d5e51dbc9c4d95e2739ea8cad93, type: 3}
       propertyPath: m_Size.y
@@ -810,6 +810,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -16.434155
       objectReference: {fileID: 0}
+    - target: {fileID: 2589974076076889865, guid: 6dde3d5e51dbc9c4d95e2739ea8cad93, type: 3}
+      propertyPath: endPos
+      value: 
+      objectReference: {fileID: 6059132277958009426, guid: 002d96fb574adee4e9abefca8eaee5ce, type: 3}
     - target: {fileID: 2589974076076889865, guid: 6dde3d5e51dbc9c4d95e2739ea8cad93, type: 3}
       propertyPath: gameOverPanel
       value: 
