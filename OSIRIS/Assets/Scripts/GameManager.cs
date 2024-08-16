@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
         stage = "stage1";
         DataManager.Instance.LoadData();
         SceneManager.sceneLoaded += OnSceneLoaded;
+
+        SoundManager.Instance.PlayBGMSound(SceneManager.GetActiveScene().name);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
