@@ -228,7 +228,7 @@ Transform:
   m_GameObject: {fileID: 8924815910148303710}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: -2.74, z: 0}
+  m_LocalPosition: {x: -5, y: -2.8, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -349,6 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  offsetX: -2.5
   heart: 0
 --- !u!114 &3899948448692919648
 MonoBehaviour:
@@ -365,13 +366,17 @@ MonoBehaviour:
   Platform:
     serializedVersion: 2
     m_Bits: 0
+  Obstacle:
+    serializedVersion: 2
+    m_Bits: 0
   gameOverPanel: {fileID: 0}
   Deadcnt: 0
   LifeManager: {fileID: 0}
   JumpCount: 0
-  jumpForce: 17
+  jumpForce: 15
   doubleJumpForce: 12
   gravityScaleDuringJump: 5
+  isFly: 0
   FlyDuration: 5
   FlyYPosition: -0.75
   invincibleDuration: 1
@@ -446,7 +451,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15134192, y: -18.96583}
+  m_Offset: {x: -0.15134192, y: -16.434155}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -457,7 +462,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.381984, y: 1.7343483}
+  m_Size: {x: 12.381984, y: 6.7977}
   m_EdgeRadius: 0
 --- !u!58 &5135861807215028607
 CircleCollider2D:
@@ -466,7 +471,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8924815910148303710}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -491,9 +496,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.124262765, y: -9.597279}
+  m_Offset: {x: 5.411685, y: -14.425344}
   serializedVersion: 2
-  m_Radius: 6.81409
+  m_Radius: 5.4105463
 --- !u!114 &2589974076076889865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,3 +512,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 0}
+  endPos: {fileID: 6059132277958009426, guid: 002d96fb574adee4e9abefca8eaee5ce, type: 3}
