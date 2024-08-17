@@ -2124,7 +2124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 189, y: -37.06}
+  m_AnchoredPosition: {x: 189, y: -37.06006}
   m_SizeDelta: {x: 1560, y: 160}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &8326879914926923371
@@ -2403,6 +2403,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d49836f9727a6de4f9737970f81928ac, type: 3}
   - {fileID: 21300000, guid: 53e3264f54a76b24bbc8e72f6e658a5f, type: 3}
   pausePanel: {fileID: 7917154399574857696}
+  isEndingSceneAppear: 0
 --- !u!1 &7321593249062269477
 GameObject:
   m_ObjectHideFlags: 0

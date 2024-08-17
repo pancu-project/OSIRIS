@@ -11,6 +11,8 @@ public class CameraShakeEffect : MonoBehaviour
     [SerializeField] private float m_roughness; //거칠기 정도
     [SerializeField] private float m_magnitude; //움직임 범위
 
+    public float colorLerpDuration = 1.5f;
+
     GameObject mainCamera;
     GameObject player;
     SpriteRenderer settRenderer;
@@ -70,7 +72,7 @@ public class CameraShakeEffect : MonoBehaviour
 
     IEnumerator LerpColor()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(colorLerpDuration);
 
         float progress = 0;
         float increment = smoothness / duration;

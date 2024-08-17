@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 2419684326332508052}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6, y: -2, z: 0}
+  m_LocalPosition: {x: -5, y: -2.8, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  heart: 0
 --- !u!114 &2553942574345725930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,14 +168,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a18cad8b32ac0044ba4298000c4e69e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Platform:
+    serializedVersion: 2
+    m_Bits: 0
+  gameOverPanel: {fileID: 0}
   Deadcnt: 0
   LifeManager: {fileID: 0}
   JumpCount: 0
   jumpForce: 13
+  doubleJumpForce: 15
   gravityScaleDuringJump: 5
+  isFly: 0
   FlyDuration: 5
   FlyYPosition: -0.75
   invincibleDuration: 1
+  isDie: 0
   playerCollider: {fileID: 0}
   slideCollider: {fileID: 0}
   foot: {fileID: 0}
