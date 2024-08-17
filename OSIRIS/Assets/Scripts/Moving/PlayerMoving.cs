@@ -10,7 +10,7 @@ public class PlayerMoving : MonoBehaviour
     Vector3 movePos;
 
     //Vector3 cameraPosition;
-    private float offsetX = -3f;
+    public float offsetX = -2.5f;
     public bool heart = false; 
 
     private PlayerAnimation playerAnimation;
