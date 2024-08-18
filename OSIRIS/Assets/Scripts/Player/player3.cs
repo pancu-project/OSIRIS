@@ -156,6 +156,9 @@ public class player3 : MonoBehaviour
             {
                 DataManager.Instance.currentData.isEndingPlayed = true;
                 DataManager.Instance.SaveData();
+
+                SoundManager.Instance.StopBGMSound();
+
                 SceneManager.LoadScene("EndingScene");
             }
 
