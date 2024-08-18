@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class player3 : MonoBehaviour
@@ -126,7 +127,7 @@ public class player3 : MonoBehaviour
         {
             transform.position = resetPosition3;
         }
-        if (transform.position.x >= 377.5f && transform.position.y <= -2f && Deadcnt == 3) // 4번째 시체조각 회수 못할 시 리셋
+        if (transform.position.x >= 415f && transform.position.y <= -2f && Deadcnt == 3) // 4번째 시체조각 회수 못할 시 리셋
         {
             transform.position = resetPosition4;
         }
@@ -145,17 +146,24 @@ public class player3 : MonoBehaviour
 
         if (transform.position.x >= endPos.position.x)
         {
-            gameOverPanel.SetActive(true);
-            Time.timeScale = 0f;
-
-            PauseButton pause = GameObject.Find("Pause").GetComponent<PauseButton>();
-            pause.isEndingSceneAppear = true;
-
             if (int.Parse(Regex.Replace(GameManager.Instance.stage, @"[^0-9]", "")) >= DataManager.Instance.currentData.stageLevel)
             {
                 DataManager.Instance.currentData.stageLevel++;
                 DataManager.Instance.SaveData();
             }
+
+            if (!DataManager.Instance.currentData.isEndingPlayed)
+            {
+                DataManager.Instance.currentData.isEndingPlayed = true;
+                DataManager.Instance.SaveData();
+                SceneManager.LoadScene("EndingScene");
+            }
+
+            gameOverPanel.SetActive(true);
+            Time.timeScale = 0f;
+
+            PauseButton pause = GameObject.Find("Pause").GetComponent<PauseButton>();
+            pause.isEndingSceneAppear = true;
         }
     }
 

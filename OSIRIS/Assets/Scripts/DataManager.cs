@@ -15,6 +15,9 @@ public class Data
     // 게임 방법 창 노출 여부
     public bool isHowToShown;
 
+    // 엔딩 동영상 시청 여부
+    public bool isEndingPlayed;
+
     // 인게임 볼륨 정보 저장
     public float volume = .5f;
 }
