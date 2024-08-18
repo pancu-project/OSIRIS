@@ -54,12 +54,12 @@ public class player3 : MonoBehaviour
 
         //리셋지점
         resetPosition1 = new Vector3(-5f, -2.8f, transform.position.z);
-        resetPosition2 = new Vector3(42f, -2.8f, transform.position.z);
-        resetPosition3 = new Vector3(200f, -2.8f, transform.position.z);
-        resetPosition4 = new Vector3(265f, -2.8f, transform.position.z);
+        resetPosition2 = new Vector3(32.5f, -2.8f, transform.position.z);
+        resetPosition3 = new Vector3(198f, -2.8f, transform.position.z);
+        resetPosition4 = new Vector3(290f, -2.8f, transform.position.z);
         resetPosition5 = new Vector3(379f, -2.8f, transform.position.z);
-        resetPosition6 = new Vector3(460f, -2.8f, transform.position.z);
-        resetPosition7 = new Vector3(583f, -2.8f, transform.position.z);
+        resetPosition6 = new Vector3(457f, -2.8f, transform.position.z);
+        resetPosition7 = new Vector3(525.5f, -2.8f, transform.position.z);
     }
 
     public void ShowImage(int DeadCnt)

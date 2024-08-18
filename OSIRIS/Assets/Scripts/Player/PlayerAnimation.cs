@@ -150,17 +150,6 @@ public class PlayerAnimation : MonoBehaviour
         isDie = true;
         animator.SetBool("isDie", true);
         playerMoving.moveSpeed = 0;
-        //수정한 부분----------------------------------------------------------------------------------------------------------
-        // playerCollider.enabled = false; 
-        // slideCollider.enabled = false;
-        StartCoroutine(WaitForDieAnimation());
-    }
-    private IEnumerator WaitForDieAnimation()
-    {
-        yield return new WaitForSeconds(1f); // 애니메이션이 충분히 실행될 시간을 줌
-        gameOverPanel.SetActive(true);
-        pause.isEndingSceneAppear = true;
-        Time.timeScale = 0f;
     }
 
     private void StartInvincibleState()
@@ -222,16 +211,13 @@ public class PlayerAnimation : MonoBehaviour
 
     private void LateUpdate()
     {
-        // die 애니 실행 후 게임 오버 띄우기
-        //if (animator.GetCurrentAnimatorStateInfo(0).IsName("die"))
-        //{
-            
-        //    {
-        //        gameOverPanel.SetActive(true);
-        //        pause.isEndingSceneAppear = true;
-        //        Time.timeScale = 0f;
-        //    }
-        //}
+        //die 애니 실행 후 게임 오버 띄우기
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("die"))
+        {
+            gameOverPanel.SetActive(true);
+            pause.isEndingSceneAppear = true;
+            Time.timeScale = 0f;
+        }
 
         // 스킬 애니메이션 상태에서 위치 조정      
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fly"))
@@ -239,20 +225,21 @@ public class PlayerAnimation : MonoBehaviour
             Vector3 newPosition = transform.position;
             newPosition.y = FlyYPosition;
             transform.position = newPosition;
-        }       
+            playerCollider.enabled = false;
+        }
+
     }
 
     private void StartTransformation() //변신 시작
     {
         SoundManager.Instance.PlaySFXSound("Skill");
-
         isFly = true;
         animator.SetBool("Flying", true);
         animator.SetTrigger("isFly");
         //추가한 부분---------------------------------------------------------------------------------------------------
         sprite.color = originalColor; //투명도 원래대로 복구
-
-        playerCollider.enabled = false; // 물약 섭취시 콜라이더 비활성화
+       
+        foot.enabled = false; // 물약 섭취시 콜라이더 비활성화
         slideCollider.enabled = false; // 물약 섭취시 콜라이더 비활성화
 
         if (transformationCoroutine != null)
@@ -260,7 +247,6 @@ public class PlayerAnimation : MonoBehaviour
             StopCoroutine(transformationCoroutine);
         }
 
-        //Debug.Log(FlyDuration);
         skillProgressBar.StartProgressBar(FlyDuration);
         transformationCoroutine = StartCoroutine(TransformationRoutine());
     }
@@ -268,20 +254,33 @@ public class PlayerAnimation : MonoBehaviour
     private IEnumerator TransformationRoutine()//변신 유지 시간
     {
         // 3초 동안 변신 상태 유지
-        foot.enabled = false;
         yield return new WaitForSeconds(FlyDuration);
-        foot.enabled = true;
+        //foot.enabled = true;
         EndTransformation();
     }
 
-    private void EndTransformation()//변신 종료
+    //private void EndTransformation()//변신 종료
+    //{
+    //    foot.enabled = true;     
+    //    isFly = false;
+    //    animator.SetBool("Flying", false);
+    //    animator.SetTrigger("BackRun");
+    //    playerCollider.enabled = true; // 스킬 종료 후 콜라이더 활성화     
+    //}
+    private void EndTransformation() // 변신 종료
+    {      
+        foot.enabled = true;
+        StartCoroutine(DelayedBackRunTrigger());
+    }
+
+    private IEnumerator DelayedBackRunTrigger()
     {
+        // foot 콜라이더가 활성화될 때까지 기다림
+        yield return new WaitUntil(() => foot.enabled);
         isFly = false;
         animator.SetBool("Flying", false);
         animator.SetTrigger("BackRun");
-
-        playerCollider.enabled = true; // 스킬 종료 후 콜라이더 활성화
-      
+        playerCollider.enabled = true;
     }
 
     // 충돌 관리 - 점프카운트 리셋 / 추락 시 하트 소진
@@ -301,9 +300,7 @@ public class PlayerAnimation : MonoBehaviour
             //    sprite.color = originalColor; //투명도 원래대로 복구
             //    reSpeed();
             //    playerCollider.enabled = true;
-
             //}
-
             Debug.Log("Bottom!");
         }
     }
@@ -312,7 +309,7 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (!pause.IsTimeFlow()) { return; }
         if (isDie) { return; }
-
+        
         //raycast
         Vector3 raycastPosition = new Vector3(transform.position.x,transform.position.y + 0.3f,transform.position.z);
         Vector3 raycastPosition2 = new Vector3(transform.position.x, transform.position.y - 0.7f, transform.position.z);
