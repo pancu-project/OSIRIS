@@ -103,7 +103,7 @@ public class player2 : MonoBehaviour
             transform.position = resetPosition1;
             Debug.Log("시체 조각 1 회수 못함!!");
         }
-        if (transform.position.x >= 357f && transform.position.y <= -2f && Deadcnt == 1) // 2번째 시체조각 회수 못할 시 리셋
+        if (transform.position.x >= 368f && transform.position.y <= -2f && Deadcnt == 1) // 2번째 시체조각 회수 못할 시 리셋
         {
             transform.position = resetPosition2;
             Debug.Log("시체 조각 2 회수 못함!!");
@@ -113,12 +113,12 @@ public class player2 : MonoBehaviour
             transform.position = resetPosition3;
             Debug.Log("시체 조각 3 회수 못함!!");
         }
-        if (transform.position.x >= 610.8f && transform.position.y <= -2f && Deadcnt == 3) // 4번째 시체조각 회수 못할 시 리셋
+        if (transform.position.x >= 611f && transform.position.y <= -2f && Deadcnt == 3) // 4번째 시체조각 회수 못할 시 리셋
         {
             transform.position = resetPosition4;
             Debug.Log("시체 조각 4 회수 못함!!");
         }
-        if (transform.position.x >= 637f && transform.position.y <= -2f && Deadcnt == 4) // 5번째 시체조각 회수 못할 시 리셋
+        if (transform.position.x >= 640f && transform.position.y <= -2f && Deadcnt == 4) // 5번째 시체조각 회수 못할 시 리셋
         {
             transform.position = resetPosition5;
             Debug.Log("시체 조각 5 회수 못함!!");
@@ -174,7 +174,7 @@ public class player2 : MonoBehaviour
                 Debug.Log("추락!!");
                 playerMoving.moveSpeed = 0;
                 playerAnimation.minusHeart();
-                transform.position = new Vector3(251f, -2.8f, transform.position.z);
+                transform.position = new Vector3(248f, -2.8f, transform.position.z);
                 playerAnimation.reSpeed();
             }
             else if (collision.gameObject.CompareTag("repo5"))
@@ -190,7 +190,7 @@ public class player2 : MonoBehaviour
                 Debug.Log("추락!!");
                 playerMoving.moveSpeed = 0;
                 playerAnimation.minusHeart();
-                transform.position = new Vector3(356f, -2.8f, transform.position.z);
+                transform.position = new Vector3(375f, -2.8f, transform.position.z);
                 playerAnimation.reSpeed();
             }
             else if (collision.gameObject.CompareTag("repo7"))
