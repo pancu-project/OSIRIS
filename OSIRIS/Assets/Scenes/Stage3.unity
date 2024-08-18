@@ -789,41 +789,9 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2016653762800143896, guid: ec57828331b1aaf4f80f57e4812976eb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2016653762800143896, guid: ec57828331b1aaf4f80f57e4812976eb, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2016653762800143896, guid: ec57828331b1aaf4f80f57e4812976eb, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2016653762800143896, guid: ec57828331b1aaf4f80f57e4812976eb, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6519357728576790177, guid: ec57828331b1aaf4f80f57e4812976eb, type: 3}
       propertyPath: m_Name
       value: Stage3 UICanvas 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6601521988499344918, guid: ec57828331b1aaf4f80f57e4812976eb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6601521988499344918, guid: ec57828331b1aaf4f80f57e4812976eb, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6601521988499344918, guid: ec57828331b1aaf4f80f57e4812976eb, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6601521988499344918, guid: ec57828331b1aaf4f80f57e4812976eb, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7041439399694248865, guid: ec57828331b1aaf4f80f57e4812976eb, type: 3}
       propertyPath: m_Pivot.x
@@ -20030,6 +19998,14 @@ PrefabInstance:
     - target: {fileID: 8353205550338920413, guid: 3ff8e227e7b38e9489827605e4738df4, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672581434319589474, guid: 3ff8e227e7b38e9489827605e4738df4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672581434319589474, guid: 3ff8e227e7b38e9489827605e4738df4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: 8951905996269616190, guid: 3ff8e227e7b38e9489827605e4738df4, type: 3}
       propertyPath: m_Layer

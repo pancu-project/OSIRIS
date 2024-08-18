@@ -88,7 +88,7 @@ public class SoundManager : MonoBehaviour
         }
 
         sfx_player.clip = sfx_audioClips[index];
-        sfx_player.Play();
+        sfx_player.PlayOneShot(sfx_player.clip);
     }
 
     public void StopBGMSound()
