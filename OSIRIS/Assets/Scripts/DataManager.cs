@@ -19,7 +19,7 @@ public class Data
     public bool isEndingPlayed;
 
     // 인게임 볼륨 정보 저장
-    public float volume = .25f;
+    public float volume = 0.25f;
 }
 
 public class DataManager : MonoBehaviour
