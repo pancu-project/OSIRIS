@@ -8,6 +8,7 @@ public class PlayerAnimation : MonoBehaviour
     PauseButton pause;
 
     public LayerMask Platform;
+    public LayerMask Obstacle;
 
     //플레이어 속도 조절
     private PlayerMoving playerMoving;
@@ -102,7 +103,7 @@ public class PlayerAnimation : MonoBehaviour
     {
         if (!isDie)
         {
-            if ((colliderRole == "sildeCollider" || colliderRole == "totalCollider") && other.CompareTag("potion") && !isFly) // 물약
+            if ((colliderRole == "sildeCollider" || colliderRole == "totalCollider") && other.CompareTag("potion")) // 물약
             {
                 Destroy(other.gameObject);
                 if (isSlide)
@@ -111,13 +112,13 @@ public class PlayerAnimation : MonoBehaviour
                 }
                 StartTransformation();
             }
-
-            if ((colliderRole == "sildeCollider" || colliderRole == "totalCollider") && other.CompareTag("Obstacle") && !isDie) // 장애물 
-            {
-                StartInvincibleState();
-                Debug.Log("장애물이랑 충돌~");
-                minusHeart();
-            }
+            //수정한 부분---------------------------------------------------------------------------------------------------
+            //if ((colliderRole == "sildeCollider" || colliderRole == "totalCollider") && other.CompareTag("Obstacle") && !isDie) // 장애물 
+            //{
+            //    StartInvincibleState();
+            //    Debug.Log("장애물이랑 충돌~");
+            //    minusHeart();
+            //}
 
             if ((colliderRole == "sildeCollider" || colliderRole == "totalCollider") && other.CompareTag("Dead")) // 시체조각
             {
@@ -149,9 +150,17 @@ public class PlayerAnimation : MonoBehaviour
         isDie = true;
         animator.SetBool("isDie", true);
         playerMoving.moveSpeed = 0;
-        
-        playerCollider.enabled = false; 
-        slideCollider.enabled = false;
+        //수정한 부분----------------------------------------------------------------------------------------------------------
+        // playerCollider.enabled = false; 
+        // slideCollider.enabled = false;
+        StartCoroutine(WaitForDieAnimation());
+    }
+    private IEnumerator WaitForDieAnimation()
+    {
+        yield return new WaitForSeconds(1f); // 애니메이션이 충분히 실행될 시간을 줌
+        gameOverPanel.SetActive(true);
+        pause.isEndingSceneAppear = true;
+        Time.timeScale = 0f;
     }
 
     private void StartInvincibleState()
@@ -162,16 +171,19 @@ public class PlayerAnimation : MonoBehaviour
             isCollide = true;
             animator.SetBool("isCollide", true);
             sprite.color = new Color(1, 1, 1, 0.4f); //충돌 시 투명하게 바꾸기
-            playerCollider.enabled = false; // 무적상태
-            slideCollider.enabled = false;
-
+            //수정한 부분-----------------------------------------------------------------------------------------------------------
+            //playerCollider.enabled = false; // 무적상태
+            //slideCollider.enabled = false;
             StartCoroutine(InvincibleRoutine());
         }
     }
 
     private IEnumerator InvincibleRoutine() // 충돌 시간
     {
-        yield return new WaitForSeconds(invincibleDuration);
+        if (!isFly)
+        {
+            yield return new WaitForSeconds(invincibleDuration);
+        }
         if (!trasition && !trasition2)
         {
             EndInvincibleState();
@@ -183,6 +195,18 @@ public class PlayerAnimation : MonoBehaviour
             animator.SetBool("trasition", false);
             sprite.color = originalColor; //투명도 원래대로 복구
             slideCollider.enabled = true;
+        }
+        else if (trasition2)
+        {
+            trasition2 = false;
+            animator.SetBool("trasition2", false);
+            isInvincible = false;
+            sprite.color = originalColor; //투명도 원래대로 복구
+            reSpeed();
+            if (!isSlide)
+            {
+                playerCollider.enabled = true;
+            }
         }
     }
 
@@ -199,12 +223,15 @@ public class PlayerAnimation : MonoBehaviour
     private void LateUpdate()
     {
         // die 애니 실행 후 게임 오버 띄우기
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("die"))
-        {
-            gameOverPanel.SetActive(true);
-            pause.isEndingSceneAppear = true;
-            Time.timeScale = 0f;
-        }
+        //if (animator.GetCurrentAnimatorStateInfo(0).IsName("die"))
+        //{
+            
+        //    {
+        //        gameOverPanel.SetActive(true);
+        //        pause.isEndingSceneAppear = true;
+        //        Time.timeScale = 0f;
+        //    }
+        //}
 
         // 스킬 애니메이션 상태에서 위치 조정      
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Fly"))
@@ -222,6 +249,8 @@ public class PlayerAnimation : MonoBehaviour
         isFly = true;
         animator.SetBool("Flying", true);
         animator.SetTrigger("isFly");
+        //추가한 부분---------------------------------------------------------------------------------------------------
+        sprite.color = originalColor; //투명도 원래대로 복구
 
         playerCollider.enabled = false; // 물약 섭취시 콜라이더 비활성화
         slideCollider.enabled = false; // 물약 섭취시 콜라이더 비활성화
@@ -239,7 +268,9 @@ public class PlayerAnimation : MonoBehaviour
     private IEnumerator TransformationRoutine()//변신 유지 시간
     {
         // 3초 동안 변신 상태 유지
-         yield return new WaitForSeconds(FlyDuration);
+        foot.enabled = false;
+        yield return new WaitForSeconds(FlyDuration);
+        foot.enabled = true;
         EndTransformation();
     }
 
@@ -262,16 +293,16 @@ public class PlayerAnimation : MonoBehaviour
             animator.SetBool("isJump", false);
             JumpCount = 0;
 
-            if (trasition2)
-            {
-                trasition2 = false;
-                animator.SetBool("trasition2", false);
-                isInvincible = false;
-                sprite.color = originalColor; //투명도 원래대로 복구
-                reSpeed();
-                playerCollider.enabled = true;
+            //if (trasition2)
+            //{
+            //    trasition2 = false;
+            //    animator.SetBool("trasition2", false);
+            //    isInvincible = false;
+            //    sprite.color = originalColor; //투명도 원래대로 복구
+            //    reSpeed();
+            //    playerCollider.enabled = true;
 
-            }
+            //}
 
             Debug.Log("Bottom!");
         }
@@ -283,12 +314,13 @@ public class PlayerAnimation : MonoBehaviour
         if (isDie) { return; }
 
         //raycast
-        Vector3 raycastPosition = new Vector3(transform.position.x,transform.position.y+0.3f,transform.position.z);
+        Vector3 raycastPosition = new Vector3(transform.position.x,transform.position.y + 0.3f,transform.position.z);
         Vector3 raycastPosition2 = new Vector3(transform.position.x, transform.position.y - 0.7f, transform.position.z);
 
         Debug.DrawRay(raycastPosition , Vector2.right * 0.8f, Color.red);
         Debug.DrawRay(raycastPosition2, Vector2.right * 0.8f, Color.blue);
-        RaycastHit2D hit = Physics2D.Raycast(raycastPosition, Vector2.right,0.8f,LayerMask.GetMask("Platform"));
+
+        RaycastHit2D hit = Physics2D.Raycast(raycastPosition, Vector2.right,0.7f,LayerMask.GetMask("Platform"));
         {
             if(hit.collider!=null && !isInvincible && !isSlide && !isFly)
             {
@@ -298,16 +330,36 @@ public class PlayerAnimation : MonoBehaviour
             }
         }
 
-        RaycastHit2D hit2 = Physics2D.Raycast(raycastPosition2, Vector2.right, 0.8f, LayerMask.GetMask("Platform"));
+        RaycastHit2D hit2 = Physics2D.Raycast(raycastPosition2, Vector2.right, 0.7f, LayerMask.GetMask("Platform"));
         {
-            if (hit2.collider != null && !isInvincible && !isFly)
+            if (hit2.collider != null && !isInvincible &&  !isFly)
             {
                 Debug.Log("레이캐스트 감지" + hit2.collider.name);
                 StartInvincibleState();
                 minusHeart();
             }
         }
+        //추가한부분---------------------------------------------------------------------------------------------------
+        RaycastHit2D hit3 = Physics2D.Raycast(raycastPosition, Vector2.right, 0.7f, LayerMask.GetMask("Obstacle"));
+        {
+            if (hit3.collider != null && !isInvincible && !isSlide && !isFly)
+            {
+                Debug.Log("레이캐스트 감지" + hit3.collider.name);
+                StartInvincibleState();
+                minusHeart();
+            }
+        }
 
+        RaycastHit2D hit4 = Physics2D.Raycast(raycastPosition2, Vector2.right, 0.7f, LayerMask.GetMask("Obstacle"));
+        {
+            if (hit4.collider != null && !isInvincible && !isFly)
+            {
+                Debug.Log("레이캐스트 감지" + hit4.collider.name);
+                StartInvincibleState();
+                minusHeart();
+            }
+        }
+        //추가한 부분임--------------------------------------------------------------------------------------------------
 
         //점프
         if (Input.GetKeyDown(KeyCode.Space) && JumpCount < 2 && isSlide == false)

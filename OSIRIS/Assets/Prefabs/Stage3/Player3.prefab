@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  offsetX: -2.5
   heart: 0
 --- !u!114 &2553942574345725930
 MonoBehaviour:
@@ -169,6 +170,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platform:
+    serializedVersion: 2
+    m_Bits: 0
+  Obstacle:
     serializedVersion: 2
     m_Bits: 0
   gameOverPanel: {fileID: 0}
@@ -253,7 +257,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15134192, y: -18.96583}
+  m_Offset: {x: -0.6845207, y: -15.944479}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -264,7 +268,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 12.381984, y: 1.7343483}
+  m_Size: {x: 13.448341, y: 7.777051}
   m_EdgeRadius: 0
 --- !u!58 &5433063963344246068
 CircleCollider2D:
@@ -313,6 +317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fda59d3105df6041975f663c5a0de2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 0}
+  endPos: {fileID: 0}
 --- !u!1 &2802501764169535299
 GameObject:
   m_ObjectHideFlags: 0
