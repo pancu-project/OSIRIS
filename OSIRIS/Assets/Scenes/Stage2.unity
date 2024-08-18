@@ -139,6 +139,14 @@ PrefabInstance:
       propertyPath: sett
       value: 
       objectReference: {fileID: 1770483653}
+    - target: {fileID: 3618667202482236775, guid: 00be7fd6246d6744390dc3f0b09974b2, type: 3}
+      propertyPath: appearSpot.Array.data[0]
+      value: 
+      objectReference: {fileID: 4272922945566602623, guid: 83317d1d9e4386a4689dd1eda79c2e07, type: 3}
+    - target: {fileID: 3618667202482236775, guid: 00be7fd6246d6744390dc3f0b09974b2, type: 3}
+      propertyPath: appearSpot.Array.data[1]
+      value: 
+      objectReference: {fileID: 6616502914403917840, guid: 9cef11b91deb6d1429da80c47317c3d0, type: 3}
     - target: {fileID: 6102234777242336574, guid: 00be7fd6246d6744390dc3f0b09974b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
