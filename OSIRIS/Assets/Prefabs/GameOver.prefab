@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8ec02897d4591e541ae4cb4cdda6bbe9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5dc40bc2c7b5e4046bd43854166a91b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1302560745373943619}
         m_TargetAssemblyTypeName: gameOver, Assembly-CSharp
         m_MethodName: CloseButtonClicked
         m_Mode: 1
@@ -591,8 +591,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -31, y: -156}
-  m_SizeDelta: {x: 232.9787, y: 267.4882}
+  m_AnchoredPosition: {x: -8, y: -98}
+  m_SizeDelta: {x: 252.8231, y: 302.2159}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7543249411007650905
 CanvasRenderer:
@@ -676,7 +676,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2950284637422101813}
         m_TargetAssemblyTypeName: gameOver, Assembly-CSharp
         m_MethodName: CloseButtonClicked
         m_Mode: 1
