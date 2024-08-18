@@ -158,7 +158,7 @@ public class player2 : MonoBehaviour
                 Debug.Log("추락!!");
                 playerMoving.moveSpeed = 0;
                 playerAnimation.minusHeart();
-                transform.position = new Vector3(52f, -0.8f, transform.position.z);
+                transform.position = new Vector3(51f, -0.8f, transform.position.z);
                 playerAnimation.reSpeed();
             }
             else if (collision.gameObject.CompareTag("repo3"))
@@ -166,7 +166,7 @@ public class player2 : MonoBehaviour
                 Debug.Log("추락!!");
                 playerMoving.moveSpeed = 0;
                 playerAnimation.minusHeart();
-                transform.position = new Vector3(124f, -2.8f, transform.position.z);
+                transform.position = new Vector3(122f, -2.8f, transform.position.z);
                 playerAnimation.reSpeed();
             }
             else if (collision.gameObject.CompareTag("repo4"))
