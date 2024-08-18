@@ -19,7 +19,7 @@ public class Data
     public bool isEndingPlayed;
 
     // 인게임 볼륨 정보 저장
-    public float volume = .5f;
+    public float volume = .25f;
 }
 
 public class DataManager : MonoBehaviour
@@ -65,6 +65,7 @@ public class DataManager : MonoBehaviour
     public void DataClear()
     {
         currentData = new Data();
+        SaveData();
     }
 
     // AES 암호화 키 및 초기화 벡터(IV)를 설정
