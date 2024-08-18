@@ -34,6 +34,12 @@ public class PauseButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             buttonImage.sprite = pauseImage[1];
             isTimeFlow = false;
         }
+        else
+        {
+            Time.timeScale = 1f;
+            isTimeFlow = true;
+            buttonImage.sprite = pauseImage[0];
+        }
     }
 
     public void CloseButtonClicked()
