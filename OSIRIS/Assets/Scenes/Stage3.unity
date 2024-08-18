@@ -19665,6 +19665,14 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[46].Array.data[3].Y
       value: -60000000
       objectReference: {fileID: 0}
+    - target: {fileID: 8309352915418292767, guid: ae58ec9127da0e8469ccade8900da234, type: 3}
+      propertyPath: moveSpeed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8309352915418292767, guid: ae58ec9127da0e8469ccade8900da234, type: 3}
+      propertyPath: playerDistance
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -20223,6 +20231,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4678951890380927357, guid: 644971d90dcaf4544a70812063d24865, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4678951890380927357, guid: 644971d90dcaf4544a70812063d24865, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.07
+      objectReference: {fileID: 0}
     - target: {fileID: 7783579143489568619, guid: 644971d90dcaf4544a70812063d24865, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
