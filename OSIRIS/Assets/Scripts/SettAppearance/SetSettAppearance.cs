@@ -44,7 +44,6 @@ public class SetSettAppearance : MonoBehaviour
 
     IEnumerator SetSettAppearTime(int index)
     {
-
         float time = 10f;
 
         if (index == 1 || index == 2)

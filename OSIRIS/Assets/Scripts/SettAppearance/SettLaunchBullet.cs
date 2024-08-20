@@ -8,7 +8,7 @@ public class SettLaunchBullet : MonoBehaviour
     [SerializeField] GameObject bullet;
     [SerializeField] Transform gun;
 
-    private void Start()
+    private void OnEnable()
     {
         Invoke("Launch", 2f);
     }
